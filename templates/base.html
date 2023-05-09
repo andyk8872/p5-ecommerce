@@ -29,13 +29,16 @@
     </script>
     {% endblock %}
 
-    <title>AJK Furniture</title>
+    <title>AJK Furniture {% block extra_title %}{% endblock %}</title>
+
 </head>
 
 
 <body>
-    <header class="container-fluid fixed-top"></header>
+    
+    {% include 'includes/header.html' %}
 
+    <!-- Message container -->
     {% if messages %}
         <div class="message-container"></div>
     {% endif %}
@@ -45,6 +48,8 @@
 
     {% block content %}
     {% endblock %}
+
+    {% include 'includes/footer.html' %}
 
     {% block postloadjs %}
     {% endblock %}

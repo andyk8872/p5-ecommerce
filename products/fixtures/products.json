@@ -1,0 +1,242 @@
+[
+    {
+       "pk":1,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5001340155",
+          "name":"Arizona Bedroom Suite",
+          "description":"Finding enough storage for all your things can be a challenge. Our modern BRIMNES bedroom series is full of smart small bedroom ideas to help, like beds with four big drawers underneath or handy shelves hiding inside the headboard.",
+          "price":650.00,
+          "category":1,          
+          "image":"bedroom_1.jpg"
+       }
+    },
+    {
+        "pk":2,
+        "model":"products.product",
+        "fields":{
+           "sku":"pp5001340156",
+           "name":"Idaho Bedroom Suite",
+           "description":"Looking for furniture with traditional details and a real sense of craftsmanship? The HEMNES bedroom series gives you a big range of options, from beds to day-beds to chests of drawers and more. Its all perfectly coordinated, so you know your choices will look great together.",
+           "price":750.00,
+           "category":1,          
+           "image":"bedroom_2.jpg"
+        }
+     },
+     {
+        "pk":3,
+        "model":"products.product",
+        "fields":{
+           "sku":"pp5001340157",
+           "name":"Utah Bedroom Suite",
+           "description":"Looking for bedroom furniture with a simple, streamlined design? Welcome to our MALM bedroom series. Its full of smart ideas, like under the bed storage and a chest of drawers that works as a bedside table, too. Theres a wood veneer and white finishes to help you find your favourite.",
+           "price":1650.00,
+           "category":1,          
+           "image":"bedroom_3.jpg"
+        }
+     },
+     {
+         "pk":4,
+         "model":"products.product",
+         "fields":{
+            "sku":"pp5001340158",
+            "name":"Colorado Bedroom Suite",
+            "description":"Crafted in a specially formulated polymer with proprietary innovations to deliver superior durability, maintenance free cleanability and humanizing aesthetic appeal.",
+            "price":950.00,
+            "category":1,          
+            "image":"bedroom_4.jpg"
+         }
+      },
+      {
+        "pk":5,
+        "model":"products.product",
+        "fields":{
+           "sku":"pp5001340159",
+           "name":"Washington Bedroom Suite",
+           "description":"The sophisticated Winslow in Taupe Grey and Willow sits right at home in this country haven. The earthy colour palette coupled with the door's beaded centre panel and routered shaker design allows you to achieve a premium inframe look without the price tag.",
+           "price":2650.00,
+           "category":1,          
+           "image":"bedroom_5.jpg"
+        }
+     },
+     {
+         "pk":6,
+         "model":"products.product",
+         "fields":{
+            "sku":"pp5001340160",
+            "name":"Vermont Kitchen Suite",
+            "description":"The perfect example of how a small L-shaped kitchen can create maximum impact. Kensington in rich Heritage Green is beautifully paired here with brass metallic accents. Available in 9 trendsetting colours.",
+            "price":2250.00,
+            "category":2,          
+            "image":"kitchen_1.jpg"
+         }
+      },
+      {
+         "pk":7,
+         "model":"products.product",
+         "fields":{
+            "sku":"pp5001340161",
+            "name":"Montana Kitchen Suite",
+            "description":"Truly traditional, Jacobsen's sophisticated inframe effect door features a classic raised centre panel. The profiled design is adorned by a natural ash grain and a line detailing the door's perimeter adding further opulence to the style.",
+            "price":3250.00,
+            "category":2,          
+            "image":"kitchen_2.jpg"
+         }
+      },
+      {
+          "pk":8,
+          "model":"products.product",
+          "fields":{
+             "sku":"pp5001340162",
+             "name":"Arkansas Kitchen Suite",
+             "description":"A simplistic narrow shaker style, Arrington is suited to both classic & contemporary settings. Its natural ash grain combined with a subtle line detailing on the outer door frame adds richness to its design.",
+             "price":1850.00,
+             "category":2,          
+             "image":"kitchen_3.jpg"
+          }
+       },
+       {
+        "pk":9,
+        "model":"products.product",
+        "fields":{
+           "sku":"pp5001340163",
+           "name":"Nevada Kitchen Suite",
+           "description":"Ellesmeres superior smooth matte-painted finish and wealth of accessories combine luxury and practicality to create a kitchen thats perfect for everyday living and entertaining.",
+           "price":2550.00,
+           "category":2,          
+           "image":"kitchen_4.jpg"
+        }
+     },
+     {
+         "pk":10,
+         "model":"products.product",
+         "fields":{
+            "sku":"pp5001340164",
+            "name":"Texas Kitchen Suite",
+            "description":"A timeless classic, Ellesmere offers style in abundance. Its subtle line detailing on the outer front of the door creates the illusion of a true inframe kitchen but with a more affordable price tag",
+            "price":650.00,
+            "category":5,          
+            "image":"kitchen_5.jpg"
+         }
+      },
+      {
+         "pk":11,
+         "model":"products.product",
+         "fields":{
+            "sku":"pp5001340165",
+            "name":"Indiana Sofa",
+            "description":"Our beloved EKTORP seating has a timeless design and wonderfully thick, comfy cushions. The covers are easy to change, so buy an extra cover - or two, and change according to mood or season.",
+            "price":750.00,
+            "category":3,          
+            "image":"sofa_1.jpg"
+         }
+      },
+      {
+          "pk":12,
+          "model":"products.product",
+          "fields":{
+             "sku":"pp5001340166",
+             "name":"Virginia Sofa",
+             "description":"Smart transport was the goal when we created this comfy 2-seat sofa with durable beige polyester fabric. And we succeeded! It fits in a car and can follow you home right away. And the price? Low of course.",
+             "price":980.00,
+             "category":3,          
+             "image":"sofa_2.jpg"
+          }
+       },
+       {
+         "pk":13,
+         "model":"products.product",
+         "fields":{
+            "sku":"pp5001340167",
+            "name":"Iowa Sofa",
+            "description":"VISKAFORS is a sofa that becomes a statement piece in the room. The classic design has generous, inviting shapes and when you sink into the deep soft seat, the sofa gives you an embracing feel.",
+            "price":1350.00,
+            "category":3,          
+            "image":"sofa_3.jpg"
+         }
+      },
+      {
+          "pk":14,
+          "model":"products.product",
+          "fields":{
+             "sku":"pp5001340168",
+             "name":"New Jersey Sofa",
+             "description":"The VIMLE sofa series has sections that can be combined as you like into a customised solution for you and your home and as your life changes, you can complete the sofa and let it change with you.",
+             "price":680.00,
+             "category":3,          
+             "image":"sofa_4.jpg"
+          }
+       },
+       {
+          "pk":15,
+          "model":"products.product",
+          "fields":{
+             "sku":"pp5001340169",
+             "name":"Oklahoma Sofa",
+             "description":"With its soft shapes, modern expressions and durable dark cover, this sofa with a chaise longue is a perfect combination of function and comfort. Also comes without a chaise longue if you have less space.",
+             "price":450.00,
+             "category":5,          
+             "image":"sofa_5.jpg"
+          }
+       },
+       {
+           "pk":16,
+           "model":"products.product",
+           "fields":{
+              "sku":"pp5001340170",
+              "name":"North Dakota Dining Table",
+              "description":"This expertly crafted dining table features a Matt Grey Sintered Stone top and a powder-coated x-shaped grey powder-coated base. This on-trend combination is sleek and sophisticated while offering a hint of urban cool. It comes with 6 Rhone chairs in Ash fabric.",
+              "price":850.00,
+              "category":4,          
+              "image":"table_1.jpg"
+           }
+        },
+        {
+            "pk":17,
+            "model":"products.product",
+            "fields":{
+               "sku":"pp5001340171",
+               "name":"North Dakota Dining Table",
+               "description":"Entertain in sleek modern style with the luxuriously glamorous Kassandra Gold Dining Table. With a beautiful white, grey and gold collated Sintered Stone top, and an ultra-modern black powder-coated stainless steel metal base, it will perfectly finish any kitchen or dining space.",
+               "price":340.00,
+               "category":4,          
+               "image":"table_2.jpg"
+            }
+         },
+         {
+             "pk":18,
+             "model":"products.product",
+             "fields":{
+                "sku":"pp5001340172",
+                "name":"Missouri Dining Table",
+                "description":"Entertain in sleek modern style with the luxuriously glamorous Carla Kass Gold Dining table. The tabletop is beautiful white sintered stone with distinct gold and grey veining, beautifully complimented with a hue of green; while its ultra-contemporary base is black powder-coated stainless steel",
+                "price":350.00,
+                "category":4,          
+                "image":"table_3.jpg"
+             }
+          },
+          {
+             "pk":19,
+             "model":"products.product",
+             "fields":{
+                "sku":"pp5001340173",
+                "name":"Michigan Dining Table",
+                "description":"The set offers relaxed modern elegance and is a perfect solution for any dining room. This table will make a statement in any dining room with a sleek Grey Sintered Stone top and quality black powder-coated legs. Designed for everyday living and dining.",
+                "price":450.00,
+                "category":4,          
+                "image":"table_4.jpg"
+             }
+          },
+          {
+              "pk":20,
+              "model":"products.product",
+              "fields":{
+                 "sku":"pp5001340174",
+                 "name":"New Mexico Dining Table",
+                 "description":"A beautifully crafted dining collection manufactured using a combination of high gloss and glass. The set is completed with fine polished steel detailing between the table top and legs. Comes with matching Dining Chairs",
+                 "price":250.00,
+                 "category":5,          
+                 "image":"table_5.jpg"
+              }
+           }        
+]    

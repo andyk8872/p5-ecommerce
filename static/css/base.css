@@ -63,6 +63,24 @@ body {
     width: max-content;
 }
 
+/* mouse over link */
+.nav-link:hover {
+    color: #3A98B9 !important;
+    text-shadow: 2px 2px 3px #3A36BF;
+    transition: all, .3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -87,10 +105,4 @@ body {
     }
 }
 
-/* mouse over link */
-.nav-link:hover {
-    color: #3A98B9 !important;
-    text-shadow: 2px 2px 3px #3A36BF;
-    transition: all, .3s ease-in-out;
-    transform: scale(1.1);
-}
+

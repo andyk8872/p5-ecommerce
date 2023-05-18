@@ -65,10 +65,9 @@ body {
 
 /* mouse over link */
 .nav-link:hover {
-    color: #3A98B9 !important;
-    text-shadow: 2px 2px 3px #3A36BF;
-    transition: all, .3s ease-in-out;
-    transform: scale(1.1);
+    color: #3A98B9 !important;   
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
 }
 
 .overlay {

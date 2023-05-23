@@ -36,7 +36,7 @@
         "model": "products.category",
         "fields": {
             "name": "clearance",
-            "friendly_name": "Clearance"
+            "friendly_name": "Sale - 10% Off"
         }
     }
 ]

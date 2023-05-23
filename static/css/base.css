@@ -108,6 +108,10 @@ body {
     cursor: pointer;
 }
 
+.back-top:hover  {
+    background-color: #3A98B9 !important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

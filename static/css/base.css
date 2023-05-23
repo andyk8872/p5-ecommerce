@@ -112,6 +112,19 @@ body {
     background-color: #3A98B9 !important;
 }
 
+/* product card */
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.grow {
+    transition: all .2s ease-in-out;
+}
+.grow:hover {
+    transform: scale(1.1)!important;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -148,14 +161,4 @@ body {
 }
 
 
-/* test */
 
-.shadow {
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-}
-.grow {
-    transition: all .2s ease-in-out;
-}
-.grow:hover {
-    transform: scale(1.1)!important;
-}

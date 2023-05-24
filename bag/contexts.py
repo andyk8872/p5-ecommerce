@@ -12,13 +12,15 @@ def bag_contents(request):
     bag_items = []
     total = 0
     product_count = 0
-    bag = request.session.get('bag', {})   
+    bag = request.session.get('bag', {})
 
     for item_id, quantity in bag.items():
         product = get_object_or_404(Product, pk=item_id)
 
         if product.category.name == 'clearance':
-            product.price = product.price - (product.price * Decimal(10 / 100))
+            product.price = product.price - (product.price * Decimal(
+                settings.DISCOUNT_AMOUNT / 100))
+            # sale_price = product.price - (product.price * Decimal(10 / 100))
 
         total += quantity * product.price
         product_count += quantity
@@ -30,7 +32,6 @@ def bag_contents(request):
 
     if (total != 0) and (total < settings.FREE_DELIVERY_THRESHOLD):
         delivery = settings.STANDARD_DELIVERY_COST
-        # delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
     else:
         delivery = 0
@@ -45,7 +46,7 @@ def bag_contents(request):
         'delivery': delivery,
         'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
-        'grand_total': grand_total,        
-    }
+        'grand_total': grand_total,
+        }
 
     return context

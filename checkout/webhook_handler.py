@@ -5,6 +5,7 @@ from products.models import Product
 
 import json
 import time
+import stripe
 
 
 class StripeWH_Handler:

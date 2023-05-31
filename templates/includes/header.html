@@ -59,11 +59,7 @@
                 <li class="list-inline-item">
                     <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                         href="{% url 'view_bag' %}">
-                        <div class="text-center">
-                            <!-- <div><i class="fa-solid fa-cart-shopping"></i> -->
-                                <!-- <span class="fa-layers fa-fw" style="background:MistyRose">
-                                    <i class="fas fa-bell"></i> -->
-                                <!-- <span class="fa-layers-counter" style="background:Tomato">{{ product_count }}</span> -->
+                        <div class="text-center">                      
                                 <i class="fas fa-shopping-cart fa-lg"></i>
                                 <span id="item-count" class="badge badge-danger">{{ product_count }}</span>
                             </div>

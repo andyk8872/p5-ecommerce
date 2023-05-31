@@ -52,12 +52,11 @@
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>                            
                             <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                         </td>
+
                         <td class="py-3">
                             <p class="my-0">£{{ item.product.price|floatformat:2 }}</p>
                         </td>
                         <td class="py-3 w-25">
-
-
                             <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                 {% csrf_token %}
                                 <div class="form-group">

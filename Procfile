@@ -1,1 +1,1 @@
-web: gunicorn home_furniture.wsgi:application
+web:  gunicorn home_furniture.wsgi:application

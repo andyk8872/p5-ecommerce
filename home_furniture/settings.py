@@ -31,8 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # DEBUG = True
 DEBUG = 'DEVELOPMENT' in os.environ
 
-# ALLOWED_HOSTS = ['ajk-furniture.herokuapp.com', '8000-andyk8872-p5ecommerce-3vcxvwenw6z.ws-eu98.gitpod.io', 'localhost']
-ALLOWED_HOSTS = ['ajk-furniture.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['ajk-furniture.herokuapp.com', '8000-andyk8872-p5ecommerce-3vcxvwenw6z.ws-eu98.gitpod.io', 'localhost']
+# ALLOWED_HOSTS = ['ajk-furniture.herokuapp.com', 'localhost']
 
 # Application definition
 

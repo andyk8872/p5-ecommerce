@@ -274,14 +274,17 @@ body {
     border-radius: 0;
 }
 
-
+.header-container {    
+    margin-top: 200px;
+    background-color: #d4d4d4;
+}
 
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
-    max-width: 80%;
+    max-width: 60%;
   }
 }
 
@@ -295,18 +298,22 @@ body {
         z-index: 1030;
     }
 
-    .header-container {
+    /* .header-container {
         padding-top: 164px;
-    }
+        margin-top: 200px;
+    } */
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-    .header-container {
+    /* .header-container {
         padding-top: 116px;
-    }
+    } */
 
     body {
         height: calc(100vh - 116px);
     }
 }
+
+/* login */
+

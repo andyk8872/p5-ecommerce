@@ -15,7 +15,7 @@ from pathlib import Path
 import dj_database_url
 # if os.path.isfile('env.py'):
 #     import env
-from pathlib import Path   
+from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -183,7 +183,6 @@ if 'USE_AWS' in os.environ:
         'CacheControl': 'max-age=94608000',
     }
 
-
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'ajk-furniture'
     AWS_S3_REGION_NAME = 'eu-west-1'
@@ -225,4 +224,4 @@ else:
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
-    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')    
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')

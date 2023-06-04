@@ -19,3 +19,10 @@
 #id_default_country option:first-child {
     color: #aab7c4;
 }
+
+.profile {
+    position: fixed;    
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}

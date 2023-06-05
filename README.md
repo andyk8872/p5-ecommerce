@@ -84,10 +84,11 @@ The live website can be found [here](https://ajk-furniture.herokuapp.com/).
     |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
     | --------------- | -------------- | --------- | --------| -------------|
     [#9](https://github.com/andyk8872/p5-ecommerce/issues/9)  | As a customer | As a user I can view the shopping cart so that I can see what products I have, the quantity and the total/individual cost | Cart | Must Have
-    [#10](https://github.com/andyk8872/p5-ecommerce/issues/10)|  As a customer | As a user I can update the shopping cart so that **I can add, subtract or remove products before going to checkout. | Cart | Must Have
-    
-
-
+    [#10](https://github.com/andyk8872/p5-ecommerce/issues/10)  | As a customer | As a user I can update the shopping cart so that I can add, subtract or remove products before going to checkout. | Cart | Must Have
+    [#11](https://github.com/andyk8872/p5-ecommerce/issues/11)  | As a customer | As a customer I can view a summary of my shopping cart including the amounts so that when I proceed to payment I know what I am buying and for how much | Cart | Must Have
+* #### Epic 5 -  Checkout (Milestone 1)
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
 
 ***
 ## Deployment

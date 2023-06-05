@@ -61,7 +61,6 @@ The live website can be found [here](https://ajk-furniture.herokuapp.com/).
 *** 
 ## User Experience Design
 
-### User stories
 ### Epics and User Stories
 
 * #### Epic 1 - Home Page (Milestone 1)
@@ -88,7 +87,7 @@ The live website can be found [here](https://ajk-furniture.herokuapp.com/).
     [#10](https://github.com/andyk8872/p5-ecommerce/issues/10)|  As a customer | As a user I can update the shopping cart so that **I can add, subtract or remove products before going to checkout. | Cart | Must Have
     
 
-#### Site Users
+
 
 ***
 ## Deployment

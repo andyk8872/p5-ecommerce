@@ -4,7 +4,7 @@ html {
 
 body {
     background: url('/media/background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-size: cover;    
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
@@ -314,6 +314,3 @@ body {
         height: calc(100vh - 116px);
     }
 }
-
-/* login */
-

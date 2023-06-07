@@ -30,11 +30,20 @@
                 <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Sale - 10% Off</a>                
             </div>
         </li>     
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="" id="blog-link">
-                Blog
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Reviews
             </a>
-        </li>
+            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+                {% if user.is_authenticated %}
+                <a href="{% url 'show_review' %}" class="dropdown-item">View Shop Review</a>
+                <a href="{% url 'make_review' %}" class="dropdown-item">Make Shop Review</a>
+                {% else %}
+                <a href="{% url 'show_review' %}" class="dropdown-item">View Shop Reviews</a>
+                {% endif %}                               
+            </div>
+        </li> 
 
         <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href=""

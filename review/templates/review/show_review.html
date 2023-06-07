@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<h1 class="display-4 mt-5 text-center">Show Review</h1>
+<div class="container">
+    <div class="row bg-form text-dark">
+        <div class="col-md-4 mt-3 mb-3 offset-md-4">
+            {% for review in reviews %}
+            <div class="card bg-light mb-3 mx-auto" style="max-width: 36rem">
+
+                <div class="card-body">
+
+                    <h5 class="card-text">"{{ review.review }}"</h5>
+                    <p class="card-text"><small>Review from: {{ review.user }} on: {{ review.created_on }} and
+                            {{ review.id }} </small></p>
+                    <!-- --------------------------- -->
+                    {% if request.user.is_superuser %}
+                    <small class="ml-3">
+                        <a href="{% url 'edit_review' review.id %}">Edit</a> |
+                        <a class="text-danger" href="{% url 'delete_review' review.id %}">Delete</a>
+                    </small>
+                    {% endif %}
+                    <!-- ----------------------------- -->
+
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{%endblock%}

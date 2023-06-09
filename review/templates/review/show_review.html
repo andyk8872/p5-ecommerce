@@ -14,27 +14,34 @@
 
 {% block content %}
 <div class="background_change"></div>
-<h1 class="display-4 mt-5 text-center">Show Review</h1>
-<div class="container">    
-        <div class="row">
+<h1 class="display-4 mt-5 text-center">Review</h1>
+<div class="container">
+    <div class="row">
         <div class="col-md-6 mt-3 mb-3 offset-md-3">
+            {% if not reviews %}
+            <h2 class="text-center text-white">There are no reviews</h2>
+            {% else %}
             {% for review in reviews %}
             <div class="card bg-light mb-3 mx-auto" style="max-width: 36rem">
                 <div class="card-body">
                     <h5 class="font-weight-bold text-center bg-warning">{{ review.product }}</h5>
-                    <h5 class="card-text">Product Review: {{ review.review }}</h5>                    
-                    <p class="text-capitalize"><small>Review by: {{ review.user }} - {{ review.created_on | date:"D d M Y"}} </small></p>
-                    {% if request.user == review.user %}                    
-                        <a type="button" class="btn btn-outline-primary"href="{% url 'edit_review' review.id %}">Edit</a>   
-                        <a type="button" class="btn btn-outline-danger" href="{% url 'delete_review' review.id %}">Delete</a>                   
-                    {% elif request.user.is_superuser %}                    
-                    <a type="button" class="btn btn-outline-danger" href="{% url 'delete_review' review.id %}">Delete</a>
+                    <h5 class="card-text">Review: {{ review.review }}</h5>
+                    <p class="text-capitalize"><small>Review by: {{ review.user }} -
+                            {{ review.created_on | date:"D d M Y"}} </small></p>
+                    {% if request.user == review.user %}
+                    <a type="button" class="btn btn-outline-primary" href="{% url 'edit_review' review.id %}">Edit</a>
+                    <a type="button" class="btn btn-outline-danger"
+                        href="{% url 'delete_review' review.id %}">Delete</a>
+                    {% elif request.user.is_superuser %}
+                    <a type="button" class="btn btn-outline-danger"
+                        href="{% url 'delete_review' review.id %}">Delete</a>
                     {% else %}
                     <p></p>
                     {% endif %}
                 </div>
             </div>
             {% endfor %}
+            {% endif %}
         </div>
     </div>
 </div>

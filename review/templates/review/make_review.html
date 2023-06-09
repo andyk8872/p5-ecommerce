@@ -13,13 +13,12 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay"></div>
+<div class="background_change"></div>
 <h1 class="display-4 mt-5 text-center">Make Review..</h1>
 <div class="container">
     <div class="row bg-form text-dark">
-        <div class="col-md-4 mt-3 mb-3 offset-md-4">
+        <div class="col-md-6 mt-3 mb-3 offset-md-3">
             <form method="post" style="margin-top: 1.3em;">
-
                 {% csrf_token %}
                 <div class="form-group">
                     <label for="user">user:</label>
@@ -28,7 +27,7 @@
                 </div>
                 <br>
                 {{ form | crispy }}
-                <button type="submit" class="btn btn-warning btn-signup btn-lg">Submit</button>
+                <button type="submit" class="btn btn-primary btn-signup btn-lg">Submit</button>
             </form>
         </div>
     </div>

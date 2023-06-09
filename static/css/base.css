@@ -84,6 +84,7 @@ body {
     text-underline-offset: 0.5em;
 }
 
+/* background options */
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -92,6 +93,23 @@ body {
 	position: fixed;
 	background: white;
 	z-index: -1;
+}
+
+.background_change {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    animation: change 10s infinite;
+    z-index: -1;
+}
+@keyframes change {
+    0%{background-color: #1abc9c;}
+    25%{background-color: #2ecc71;}
+    50%{background-color: #3498bd;}
+    75%{background-color: #e74c3c;}
+    100%{background-color: #9b59b6;}
 }
 
 .btt-button {

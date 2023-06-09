@@ -7,4 +7,4 @@ class Review(admin.ModelAdmin):
     """
     Displays the fields for the Review model
     """
-    list_display = ('user', 'review', 'created_on')
+    list_display = ('user', 'product', 'review', 'created_on')

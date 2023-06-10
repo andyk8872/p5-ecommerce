@@ -31,10 +31,10 @@
                     {% if request.user == review.user %}
                     <a type="button" class="btn btn-outline-primary" href="{% url 'edit_review' review.id %}">Edit</a>
                     <a type="button" class="btn btn-outline-danger"
-                        href="{% url 'delete_review' review.id %}">Delete</a>
+                        href="{% url 'delete_items' review.id %}">Delete</a>
                     {% elif request.user.is_superuser %}
                     <a type="button" class="btn btn-outline-danger"
-                        href="{% url 'delete_review' review.id %}">Delete</a>
+                        href="{% url 'delete_items' review.id %}">Delete</a>
                     {% else %}
                     <p></p>
                     {% endif %}

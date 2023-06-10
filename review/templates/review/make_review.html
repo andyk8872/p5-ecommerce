@@ -14,18 +14,12 @@
 
 {% block content %}
 <div class="background_change"></div>
-<h1 class="display-4 mt-5 text-center">Make Review..</h1>
+<h1 class="display-5 mt-5 text-center">Make Review</h1>
 <div class="container">
     <div class="row bg-form text-dark">
         <div class="col-md-6 mt-3 mb-3 offset-md-3">
             <form method="post" style="margin-top: 1.3em;">
-                {% csrf_token %}
-                <div class="form-group">
-                    <label for="user">user:</label>
-                    <input type="text" class="form-control" id="user" name="user" value="{{ request.user.username }}"
-                        disabled>
-                </div>
-                <br>
+                {% csrf_token %}               
                 {{ form | crispy }}
                 <button type="submit" class="btn btn-primary btn-signup btn-lg">Submit</button>
             </form>

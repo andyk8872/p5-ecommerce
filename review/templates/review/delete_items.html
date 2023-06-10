@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="background_change"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mt-4 offset-md-3 text-center bg-white pb-3">
+      <form method="post" style="margin-top: 1.3em;">
+        {% csrf_token %}
+        <h1>Confirm Delete</h1>        
+        <h3 class="text-dark">Are you sure you want to delete ?</h1>
+          <br>
+          <input type="submit" class="btn btn-outline-danger btn-lg" value="  Yes  " />
+          <a href="{% url 'show_review' %}">
+            <div class="btn btn-outline-primary btn-lg">Cancel</div>
+          </a>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -39,21 +39,27 @@ def show_review(request):
     return render(request, 'review/show_review.html', context)
 
 
-def delete_review(request, review_id):
-    """ Delete a product from the store """
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
+# def delete_review(request, review_id):
+#     """ Delete a product from the store """
+    
+#     review = get_object_or_404(Review, pk=review_id)
+#     review.delete()
+#     messages.success(request, 'Review deleted!')
+#     return redirect(reverse('show_review'))
 
+def delete_items(request, review_id):
+    """ Delete a product from the store """
     review = get_object_or_404(Review, pk=review_id)
-    review.delete()
-    messages.success(request, 'Review deleted!')
-    return redirect(reverse('show_review'))
+    if request.method == 'POST':
+        review.delete()
+        messages.success(request, 'Review deleted!')
+        return redirect('show_review')
+    return render(request, 'review/delete_items.html')
 
 
 def edit_review(request, review_id):
     """
-    Displays the review form if user is authorised.
+    The review creater can edit the review.
     """
     review = get_object_or_404(Review, pk=review_id)
     if request.method == 'POST':

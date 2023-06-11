@@ -84,6 +84,10 @@ body {
     text-underline-offset: 0.5em;
 }
 
+footer i:hover {
+    color: #3a98b9 !important;
+} 
+
 /* background options */
 .overlay {
 	height: 100%;

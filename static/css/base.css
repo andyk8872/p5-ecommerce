@@ -105,7 +105,7 @@ footer i:hover {
     top: 0;
     left: 0;
     position: fixed;
-    animation: change 10s infinite;
+    animation: change 20s infinite;
     z-index: -1;
 }
 @keyframes change {

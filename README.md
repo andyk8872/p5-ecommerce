@@ -8,9 +8,9 @@
   * [Colour Scheme](#color-scheme)
   * [Typography](#typography)
   * [Database Schema](#database-schema)
-* [Business Model](#business-model)  
 * [Structure](#structure)
   * [Logic](#logic)
+* [Business Model](#business-model)
 * [Features](#features)
   * [Home Page](#home-page)
   * [Navigation](#navigation)
@@ -115,8 +115,6 @@ The live website can be found [here](https://ajk-furniture.herokuapp.com/).
 ## Structure
 ### Logic/ERD (diagrams)
 ***
-## Features
-***
 # Business Model
 
 #### Business Overview
@@ -178,10 +176,93 @@ The businesses marketing strategy going forward is:
 7. Depending on budget the business may look at promoting it's custom made products to influencers in the brands niche, offering complimentary goods or a small fee for a shout out  or review. Ideally targetting low to medium influencers with a following of at least 10k in target niche. This would be realistic with a low budget for the business starting off and can start pushing traffic towards the site. 
 
 * [Back to contents](#table-of-contents)
+
+## Features
+
+### Home Page
+* The Home Page is a portal to the site with site navigation links, footer and the online ecommerce shop title.
+![HomePage](/docs/homepage.png)<br>
+***
+
+### Navigation
+* The Navigation bar gives the user the options/links in order to navigate the site. The user can see their username if logged on. There is a search function for the products as well as dropdown menus for the products. 
+![Navigation](docs/navigation.png)<br>
+
+***
+# Technologies Used
+
+* [Django](https://www.djangoproject.com/) - A high level Python web framework.
+* [Bootstrap](https://getbootstrap.com/) - A CSS free open source framework used for the front end development.
+* [HTML5](https://en.wikipedia.org/wiki/HTML) - A markup language that describes the structure of the web page.
+* [CSS3](https://en.wikipedia.org/wiki/CSS) - Provides the styling for the website.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - Provides interactive elements of the website
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) - An interpreted, object-oriented language with dynamic semantics.
+* [Gitpod](https://gitpod.io/) - Used to create and edit the website.
+* [GitHub](https://github.com/) - Used to host the repository.
+* [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used to test responsiveness of web pages and debug.
+* [Balsamiq](https://balsamiq.com/) - Used to create the wireframes for the project.
+* [Heroku](https://dashboard.heroku.com) - Used to deploy the website.
+* [PEP8 Validation](http://pep8online.com/) - Used to validate Python code.
+* [HTML Validation](https://validator.w3.org/) - Used to validate HTML code.
+* [CSS Validation](https://jigsaw.w3.org/css-validator/) - Used to validate CSS code.
+* [JSHint Validation](https://jshint.com/) - Used to validate JavaScript code.
+* [drawSQL](https://drawsql.app/) - Used to draw the database schema.
+* [Mailchimp](mailchimp.com) - A mail service email marketing and automation service..
+* [LambdaTest](https://app.lambdatest.com/console/realtime/browser) - Used to test deployed app on different browers.
+* [Color Adobe](https://color.adobe.com/create/color-wheel) - Used to create a color palete.
+
+* [Back to contents](#table-of-contents)
+## Libraries
+This is a list of libraries used in the project.
+
+* asgiref==3.6.0
+* boto3==1.26.145
+* botocore==1.29.145
+* dj-database-url==0.5.0
+* Django==3.2.19
+* django-allauth==0.41.0
+* django-countries==7.2.1
+* django-crispy-forms==1.14.0
+* django-storages==1.13.2
+* gunicorn==20.1.0
+* jmespath==1.0.1
+* oauthlib==3.2.2
+* Pillow==9.5.0
+* psycopg2==2.9.6
+* python3-openid==3.2.0
+* pytz==2023.3
+* requests-oauthlib==1.3.1
+* s3transfer==0.6.1
+* sqlparse==0.4.4
+* stripe==5.4.0
+* urllib3==1.26.16
+
+* [Back to contents](#table-of-contents)
 ***
 ## Bugs
 * There was an issue with migrations were running against local SQL development instead of production elephantSQL. A quick solution was to add 'release: python manage.py makemigrations && python manage.py migrate' at the top of the Procfile in order for auto migrate to heroku.
 * There was an initial problem with the 'review' app in that it would not render in the 'product detail' template. In order to get the app to work it was taken out of the product app and is now a standalone app. This would possibly want to be addressed at some stage.
+* [Back to contents](#table-of-contents)
+***
+## Credits
+* [Stackoverflow(answer from 'JCJS')](https://stackoverflow.com/questions/18676156) - How to use the 'choices' field option.
+* [Stackoverflow(answer from 'htgull')](https://stackoverflow.com/questions/5959462) -  'verbose names'-For using human names is models.
+* [Stackoverflow(answer from '')](https://stackoverflow.com/questions/44022056) - Sets a constraint/validatior for the number of participants.
+* [Contact forms/django('Youtube with Stein')](https://www.youtube.com/watch?v=dnhEnF7_RyM) - Creating backend contact form in django.
+* [Collectstatic Error('answer from 'Mo Far')](https://stackoverflow.com/questions/36665889) - Removing the 'collectstatic --noinput' error on deployment.
+***
+### Code and Tutorials
+### (A number of projects from Code Institute Peer Code Review were sourced.)
+* In general Code Institute walkthrough project "Boutique Ado" was used as the template with customizations especially the additional models with additional useage of django, python, styling and other.
+* [Peer code review/Code Institute(Dee68)](https://github.com/Dee68/pp5/) - To see how the README.md file was structured.
+* [Peer code review/Code Institute(Gustav Naslund)](https://github.com/GurraNasan/dragons-nest-gaming) - To visualise an eccomerce website and its stucture.
+
+* [Back to contents](#table-of-contents)
 ***
 ## Deployment
 The project has been deployed to Heroku. Detail of the steps taken to deploy the project can be found [here](DEPLOYMENT.md)
+
+## Acknowledgements
+* This website was built as part of the Full Stack Development course from Code Institute. I would like to thank my mentor Ronan McClelland for all his feedback and guidence throughout. Also the Code Institute slack community including tutor support.
+* [Back to contents](#table-of-contents)
+***

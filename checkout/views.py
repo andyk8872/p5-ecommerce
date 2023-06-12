@@ -1,4 +1,9 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (render,
+                              redirect,
+                              reverse,
+                              get_object_or_404,
+                              HttpResponse
+                              )
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -35,6 +40,7 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+    """Checkout function to to process order"""
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -71,12 +77,11 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
+                        for quantity in item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
                                 quantity=quantity,
-                                product_size=size,
                             )
                             order_line_item.save()
                 except Product.DoesNotExist:
@@ -90,14 +95,16 @@ def checkout(request):
 
             # Save the info to the user's profile if all is well
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success',
+                            args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
     else:
         bag = request.session.get('bag', {})
         if not bag:
-            messages.error(request, "There's nothing in your bag at the moment")
+            messages.error(request, "There's nothing in\
+                 your bag at the moment")
             return redirect(reverse('products'))
 
         current_bag = bag_contents(request)
@@ -108,7 +115,7 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-       
+
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)

@@ -110,7 +110,8 @@ class Order(models.Model):
         """
         self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))[
             'lineitem_total__sum'] or 0
-        if (self.order_total != 0) and (self.order_total < settings.FREE_DELIVERY_THRESHOLD):
+        if (self.order_total != 0) and (
+             self.order_total < settings.FREE_DELIVERY_THRESHOLD):
             self.delivery_cost = settings.STANDARD_DELIVERY_COST
         else:
             self.delivery_cost = 0

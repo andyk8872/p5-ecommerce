@@ -20,7 +20,6 @@ def bag_contents(request):
         if product.category.name == 'clearance':
             product.price = product.price - (product.price * Decimal(
                 settings.DISCOUNT_AMOUNT / 100))
-            # sale_price = product.price - (product.price * Decimal(10 / 100))
 
         total += quantity * product.price
         product_count += quantity

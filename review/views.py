@@ -39,14 +39,6 @@ def show_review(request):
     return render(request, 'review/show_review.html', context)
 
 
-# def delete_review(request, review_id):
-#     """ Delete a product from the store """
-    
-#     review = get_object_or_404(Review, pk=review_id)
-#     review.delete()
-#     messages.success(request, 'Review deleted!')
-#     return redirect(reverse('show_review'))
-
 def delete_items(request, review_id):
     """ Delete a product from the store """
     review = get_object_or_404(Review, pk=review_id)

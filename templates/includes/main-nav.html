@@ -37,10 +37,10 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 {% if user.is_authenticated %}
-                <a href="{% url 'show_review' %}" class="dropdown-item">View Shop Review</a>
-                <a href="{% url 'make_review' %}" class="dropdown-item">Make Shop Review</a>
+                <a href="{% url 'show_review' %}" class="dropdown-item">View Product Reviews</a>
+                <a href="{% url 'make_review' %}" class="dropdown-item">Make Product Review</a>
                 {% else %}
-                <a href="{% url 'show_review' %}" class="dropdown-item">View Shop Reviews</a>
+                <a href="{% url 'show_review' %}" class="dropdown-item">View Product Reviews</a>
                 {% endif %}                               
             </div>
         </li> 

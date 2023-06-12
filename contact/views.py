@@ -6,13 +6,13 @@ from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.contrib import messages
 
+
 def contact(request):
     """
     Displays the contact form.
     """
     if request.method == 'POST':
-        form = ContactForm(request.POST)        
-
+        form = ContactForm(request.POST)
         if form.is_valid():
             subject = form.cleaned_data['subject']
             message = form.cleaned_data['message']
@@ -23,7 +23,7 @@ def contact(request):
                 'message': message,
                 'email': email
             })
-           
+
             send_mail('The contact form subject ', 'This is the message\
                 ', 'noreply@gmail.com\
                     ', ['andrewkennedy35@yahoo.ie'], html_message=html)
@@ -31,7 +31,7 @@ def contact(request):
                 request, 'Contact message posted.'
                 )
             return redirect('contact')
-    else:        
+    else:
         form = ContactForm()
 
     context = {

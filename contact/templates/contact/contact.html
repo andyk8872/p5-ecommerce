@@ -21,14 +21,15 @@
             <form method="post" style="margin-top: 1.3em;">
                 {% csrf_token %}
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                    {{ form.subject|as_crispy_field }}
                 </div>
                 <div class="form-group">
                     {{ form.message|as_crispy_field }}
                 </div>
+             
                 <div class="form-group">
-                    {{ form.subject|as_crispy_field }}
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
                 </div>
                 <div class="text-right">
                     <a class="btn btn-warning rounded-0" href="">Cancel Request</a>

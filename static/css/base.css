@@ -358,3 +358,7 @@ footer i:hover {
 .news-div {
     display:flex;
 }
+
+.bg-footer {
+    background-color: #d3d3d3 !important;
+}

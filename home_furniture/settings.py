@@ -36,6 +36,12 @@ DEBUG = 'DEVELOPMENT' in os.environ
 ALLOWED_HOSTS = ['ajk-furniture.herokuapp.com', '8000-andyk8872-p5ecommerce-3vcxvwenw6z.ws-eu99.gitpod.io', 'localhost']
 # ALLOWED_HOSTS = ['ajk-furniture.herokuapp.com', 'localhost']
 
+# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = 'f37d95a84b107c'
+EMAIL_HOST_PASSWORD = 'MAILTRAP_PASSWORD'
+EMAIL_PORT = '2525'
+
 # Application definition
 
 INSTALLED_APPS = [

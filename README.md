@@ -255,7 +255,7 @@ This function allows the user to confirm a delete.
 <summary> Contact </summary>
 <br>
 
-The contact option gives the user/customer the opportunity to contact the site owners. This is where they can ask questions and voice concerns that directly concern them. 
+The contact option gives the user/customer the opportunity to contact the site owners. This is where they can ask questions and voice concerns that directly concern them. In development state the email is sent to the terminal. 
 
 ![Contact](docs/contact.png)<br>
 

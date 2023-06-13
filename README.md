@@ -100,6 +100,15 @@ The live website can be found [here](https://ajk-furniture.herokuapp.com/).
     [#13](https://github.com/andyk8872/p5-ecommerce/issues/13)  | As a customer | As a user I can view the shopping cart so that **I can see what I am looking to purchase ** | Profiles | Must Have
     [#14](https://github.com/andyk8872/p5-ecommerce/issues/14)  | As a customer | As a user I can enter my credit card details and delivery details so that arrange payment and delivery of purchases | Checkout | Must Have
     [#15](https://github.com/andyk8872/p5-ecommerce/issues/15)  | As a customer | As a user I can receive confirmation of my order so that I know my purchase has been processed and payment received | Checkout | Must Have
+ * #### Epic 6 -  Checkout (Milestone 2)
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
+    [#16](https://github.com/andyk8872/p5-ecommerce/issues/16)  | As a customer | As a user I can see what previous customers thought of products so that I can make an informed choice | Checkout | Must Have
+    [#17](https://github.com/andyk8872/p5-ecommerce/issues/17)  | As a customer | As a member/admin I can make, edit, and delete my own reviews so that share my current opinions | Must Have  
+* #### Epic 7 -  Contact (Milestone 2)
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
+    [#18](https://github.com/andyk8872/p5-ecommerce/issues/18)  | As a customer | As a user I can contact the eccomerce owners so that express concerns and seek direct information | Checkout | Must Have 
 
 * [Back to contents](#table-of-contents)  
 
@@ -187,6 +196,25 @@ The businesses marketing strategy going forward is:
 ### Navigation
 * The Navigation bar gives the user the options/links in order to navigate the site. The user can see their username if logged on. There is a search function for the products as well as dropdown menus for the products. 
 ![Navigation](docs/navigation.png)<br>
+***
+
+### Reviews
+* The review feature allow new potential customers to view the opinions of previous customers on individual products. It also allows logged in customers to make reviews on individual products as well as edit and delete their own reviews. Staff can also delete reviews but they cannot edit other reviews. Also when a review is deleted there is a requirement to confirm the delete choice.
+ * This function allows the user to view a review.<br>
+![Show Reviews](/docs/view_review.png)<br>
+ * This function allows the user to make a review.<br>
+![Show Reviews](/docs/make_review.png)<br>
+ * This function allows the user to edit a review.<br>
+![Show Reviews](/docs/edit_review.png)<br>
+ * This function allows the user to confirm a delete.<br>
+![Show Reviews](/docs/delete_review.png)<br>
+***
+
+### Contact
+* The contact option gives the user/customer the opportunity to contact the site owners. This is where they can ask questions and voice concerns that directly concern them. 
+![Contact](docs/contact.png)<br>
+***
+
 
 ***
 # Technologies Used
@@ -266,3 +294,4 @@ The project has been deployed to Heroku. Detail of the steps taken to deploy the
 * This website was built as part of the Full Stack Development course from Code Institute. I would like to thank my mentor Ronan McClelland for all his feedback and guidence throughout. Also the Code Institute slack community including tutor support.
 * [Back to contents](#table-of-contents)
 ***
+* [Back to contents](#table-of-contents)

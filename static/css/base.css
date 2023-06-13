@@ -363,3 +363,22 @@ footer i:hover {
     background-color: #d3d3d3 !important;
 }
 
+.footer-list-links {
+    list-style-type: none;
+    margin: 0;
+    padding-inline-start: 0;
+    overflow: hidden;   
+}
+
+.footer-list-links li {
+    float: left;
+}
+
+.footer-list-links li a {
+    display: block;
+    color: #383838;
+    text-align: left;
+    padding: 1rem;
+    text-decoration: none;
+}
+

@@ -9,7 +9,8 @@ from django.contrib import messages
 
 def contact(request):
     """
-    Displays the contact form.
+    Displays the contact form,
+    sends the information collected.
     """
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -26,7 +27,7 @@ def contact(request):
 
             send_mail('The contact form subject ', 'This is the message\
                 ', 'noreply@gmail.com\
-                    ', ['andrewkennedy35@yahoo.ie'], html_message=html)
+                    ', ['scotsteven008@gmail.com'], html_message=html)
             messages.success(
                 request, 'Contact message posted.'
                 )

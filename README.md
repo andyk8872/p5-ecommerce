@@ -375,7 +375,6 @@ This is a list of libraries used in the project.
 * [Collectstatic Error('answer from 'Mo Far')](https://stackoverflow.com/questions/36665889) - Removing the 'collectstatic --noinput' error on deployment.
 ***
 ### Code and Tutorials
-### (A number of projects from Code Institute Peer Code Review were sourced.)
 * In general Code Institute walkthrough project "Boutique Ado" was used as the template with customizations in areas such the models and templates as outlined in the corresponding features section. 
 * [Peer code review/Code Institute(Dee68)](https://github.com/Dee68/pp5/) - To see how the README.md file was structured.
 * [Peer code review/Code Institute(Gustav Naslund)](https://github.com/GurraNasan/dragons-nest-gaming) - To visualise an eccomerce website and its stucture.

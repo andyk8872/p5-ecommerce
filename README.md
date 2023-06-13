@@ -188,31 +188,126 @@ The businesses marketing strategy going forward is:
 
 ## Features
 
-### Home Page
-* The Home Page is a portal to the site with site navigation links, footer and the online ecommerce shop title.
-![HomePage](/docs/homepage.png)<br>
-***
+<details>
+<summary> Home Page </summary>
+<br>
+The Home Page is a portal to the site with site navigation links, footer and the online ecommerce shop title.
 
-### Navigation
-* The Navigation bar gives the user the options/links in order to navigate the site. The user can see their username if logged on. There is a search function for the products as well as dropdown menus for the products. 
-![Navigation](docs/navigation.png)<br>
-***
+![HomePage](/docs/homepage.png)
 
-### Reviews
-* The review feature allow new potential customers to view the opinions of previous customers on individual products. It also allows logged in customers to make reviews on individual products as well as edit and delete their own reviews. Staff can also delete reviews but they cannot edit other reviews. Also when a review is deleted there is a requirement to confirm the delete choice.
- * This function allows the user to view a review.<br>
-![Show Reviews](/docs/view_review.png)<br>
- * This function allows the user to make a review.<br>
-![Show Reviews](/docs/make_review.png)<br>
- * This function allows the user to edit a review.<br>
-![Show Reviews](/docs/edit_review.png)<br>
- * This function allows the user to confirm a delete.<br>
-![Show Reviews](/docs/delete_review.png)<br>
-***
+</details>
 
-### Contact
-* The contact option gives the user/customer the opportunity to contact the site owners. This is where they can ask questions and voice concerns that directly concern them. 
+<details>
+<summary> Navigation </summary>
+<br>
+
+The Navigation bar gives the user the options/links in order to navigate the site. The user can see their username if logged on. There is a search function for the products as well as dropdown menus for the products.
+
+The desktop view.
+
+![Navigation](docs/navigation.png)
+
+The mobile view.
+
+![Navigation](docs/mobile_nav.png)
+
+</details>
+
+<details>
+<summary> Products </summary>
+<br>
+
+The products feature allows the user to view and search all products through various methods including a search input form, scrolling through a list by type, price.
+
+![Products](docs/list_products.png)
+
+The product can be clicked on and more information on individual products and the option to add to a shopping cart.
+
+![Products](docs/detail_products.png)
+
+</details>
+
+<details>
+<summary> Reviews </summary>
+<br>
+
+The review feature allow new potential customers to view the opinions of previous customers on individual products. It also allows logged in customers to make reviews on individual products as well as edit and delete their own reviews. Staff can also delete reviews but they cannot edit other reviews. Also when a review is deleted there is a requirement to confirm the delete choice.
+
+This function allows the user to view a review.
+
+![Show Reviews](/docs/view_review.png)
+
+This function allows the user to make a review.
+
+![Show Reviews](/docs/make_review.png)
+
+This function allows the user to edit a review.
+
+![Show Reviews](/docs/edit_review.png)
+
+This function allows the user to confirm a delete.
+
+![Show Reviews](/docs/delete_review.png)
+
+</details>
+
+<details>
+<summary> Contact </summary>
+<br>
+
+The contact option gives the user/customer the opportunity to contact the site owners. This is where they can ask questions and voice concerns that directly concern them. 
+
 ![Contact](docs/contact.png)<br>
+
+</details>
+
+<details>
+<summary> Shopping Bag </summary>
+<br>
+
+The shopping bag feature allows the user to view their choices and add/remove if they so desire. They can also view the individual/total costs. There is also the option to go to a secure checkout area of the site.
+
+![Shopping Bag](/docs/shopping_bag.png)
+
+There is also a message popup that appears when the user makes a change to their shopping bag to inform them of their change.
+
+![Shopping Bag](/docs/bag_success.png)
+
+</details>
+
+<details>
+<summary> Checkout </summary>
+<br>
+
+The checkout feature allow the user to view a list of their shopping bag including costs. There is a blank form if they are not a registered user. This form is to contain name and delivery details. 
+
+![Shopping Bag](/docs/checkout.png)
+
+There is also a portion of the form for their credit card details.
+
+![Shopping Bag](/docs/credit_details.png)
+
+</details>
+
+<details>
+<summary> Messages </summary>
+<br>
+
+There are various popoup messages that inform the user when they complete an action. These include success, error, info and warning messages.
+The Django message feature was used to facilitate this.
+
+Here is an example of a successful addition to a shopping bag.
+
+![Messages](/docs/bag_success.png)
+
+
+</details>
+
+
+### Profiles
+### Footer
+### Newsletter
+### Authentification
 ***
 
 
@@ -281,7 +376,7 @@ This is a list of libraries used in the project.
 ***
 ### Code and Tutorials
 ### (A number of projects from Code Institute Peer Code Review were sourced.)
-* In general Code Institute walkthrough project "Boutique Ado" was used as the template with customizations especially the additional models with additional useage of django, python, styling and other.
+* In general Code Institute walkthrough project "Boutique Ado" was used as the template with customizations in areas such the models and templates as outlined in the corresponding features section. 
 * [Peer code review/Code Institute(Dee68)](https://github.com/Dee68/pp5/) - To see how the README.md file was structured.
 * [Peer code review/Code Institute(Gustav Naslund)](https://github.com/GurraNasan/dragons-nest-gaming) - To visualise an eccomerce website and its stucture.
 

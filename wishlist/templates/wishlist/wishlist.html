@@ -11,8 +11,65 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container h=100">
-<h1 class="text-center">Wishlist</h1>
-<hr>
+<div class="container">
+    <h1 class="text-center">Wishlist</h1>
+        <hr>
+    <div class="row">
+        
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            {% if wishlist %}
+            <tbody>
+
+                {% for item in wishlist %}
+
+                <tr>
+
+                    <td width="45%">
+                        <div class="display-flex align-center">
+                            <div class="img-product">
+                                <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="tiny">
+                            </div>
+                            <div class="name-product">
+                                <a href="{{ item.product.get_absolute_url }}">
+                                    {{ item.product.name | title }}
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="20%" class="price">€{{ item.product.price }}</td>
+                    <td width="20%"><span {% if item.product.stock %}class="in-stock-box"
+                            {% else %}class="not-in-stock-box" {% endif %}>Stock</span></td>
+
+                    <td width="15%" class="text-center">
+
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="item-id" value="">
+                            <button type="submit" class="trash-icon"><i class="far fa-trash-alt"></i></button>
+                        </form>
+
+
+                    </td>
+
+                </tr>
+                {% endfor %}
+
+            </tbody>
+            {% else %}
+            <p>Your wish list is empty</p>
+            {% endif %}
+
+        </table>
+    </div>
 </div>
-{% endblock %}
+
+    {% endblock %}

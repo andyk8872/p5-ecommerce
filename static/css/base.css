@@ -355,6 +355,7 @@ footer i:hover {
 
 }
 
+/* footer */
 .news-div {
     display:flex;
 }
@@ -382,3 +383,8 @@ footer i:hover {
     text-decoration: none;
 }
 
+/* wishlist */
+.tiny {
+    max-height: 80px;
+    max-width: 80px;
+}

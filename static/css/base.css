@@ -86,7 +86,11 @@ body {
 
 footer i:hover {
     color: #3a98b9 !important;
-} 
+}
+
+.hover:hover {
+    color: #3a98b9 !important;
+}
 
 /* background options */
 .overlay {

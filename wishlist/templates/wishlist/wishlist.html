@@ -26,13 +26,9 @@
                 </thead>
                 {% if wishlist %}
                 <tbody>
-
                     {% for item in wishlist %}
-
                     <tr>
-
                         <td width="33%">
-
                             <div class="d-inline-block mr-4">
                                 <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="tiny">
                             </div>
@@ -41,11 +37,9 @@
                                     {{ item.product.name | title }}
                                 </a>
                             </div>
-
                         </td>
                         <td width="33%" class="price">€{{ item.product.price }}</td>
-
-
+                        
                         <td width="33%">
 
                             <form action="{% url 'wishlist:delete_item'  %}" method="post">

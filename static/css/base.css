@@ -388,3 +388,19 @@ footer i:hover {
     max-height: 80px;
     max-width: 80px;
 }
+
+ .trash {
+     color:red!important;
+     font-size: 120%;
+     border: none!important;
+    background-color: transparent;
+ }
+
+ .table>tbody>tr>td,
+ .table>tbody>tr>th {
+   border-top: none;
+ }
+
+ .align-wish > tbody > tr > td {
+    vertical-align: middle;
+}

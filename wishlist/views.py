@@ -37,4 +37,19 @@ def add_to_wish_list(request):
             Wishlist.objects.create(user=request.user, product=product)
             messages.success(request, f'Item added to wish list')
         finally:
-            return HttpResponseRedirect(request.META.get('HTTP_REFERER'))    
+            return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
+
+def delete_item(request):
+    '''
+        Removes product item from user's wishlist
+    '''
+    if request.method == 'POST':
+        item_id = request.POST.get('item-id')
+        wishlist = get_object_or_404(Wishlist, id=item_id)
+        wishlist.delete()
+        messages.info(
+            request,
+            f'You have deleted the {wishlist.product.name} from your wishlist'
+            )
+        return HttpResponseRedirect(reverse('wishlist:wishlist'))

@@ -53,7 +53,7 @@
                 {% if request.user.is_authenticated %}
                 <li class="list-inline-item"> <div class="text-center">
                     <div><i class="fa-solid fa-heart text-danger"></i></div>
-                    <p><a href="{% url 'wishlist:wishlist' %}">Wishlist</a></p>
+                    <a class="text-black" href="{% url 'wishlist:wishlist' %}">Wishlist</a>
                 </div></li>
                 {% endif %}
 

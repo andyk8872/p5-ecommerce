@@ -6,4 +6,5 @@ app_name = 'wishlist'
 urlpatterns = [
     path('', views.wishlist, name='wishlist'),
     path('add_to_wishlist/', views.add_to_wish_list, name='add_to_wishlist'),
+    path('delete_item/', views.delete_item, name='delete_item'),
 ]

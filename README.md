@@ -100,7 +100,7 @@ The live website can be found [here](https://ajk-furniture.herokuapp.com/).
     [#13](https://github.com/andyk8872/p5-ecommerce/issues/13)  | As a customer | As a user I can view the shopping cart so that **I can see what I am looking to purchase ** | Profiles | Must Have
     [#14](https://github.com/andyk8872/p5-ecommerce/issues/14)  | As a customer | As a user I can enter my credit card details and delivery details so that arrange payment and delivery of purchases | Checkout | Must Have
     [#15](https://github.com/andyk8872/p5-ecommerce/issues/15)  | As a customer | As a user I can receive confirmation of my order so that I know my purchase has been processed and payment received | Checkout | Must Have
- * #### Epic 6 -  Checkout (Milestone 2)
+* #### Epic 6 -  Checkout (Milestone 2)
     |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
     | --------------- | -------------- | --------- | --------| -------------|
     [#16](https://github.com/andyk8872/p5-ecommerce/issues/16)  | As a customer | As a user I can see what previous customers thought of products so that I can make an informed choice | Checkout | Must Have
@@ -108,7 +108,21 @@ The live website can be found [here](https://ajk-furniture.herokuapp.com/).
 * #### Epic 7 -  Contact (Milestone 2)
     |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
     | --------------- | -------------- | --------- | --------| -------------|
-    [#18](https://github.com/andyk8872/p5-ecommerce/issues/18)  | As a customer | As a user I can contact the eccomerce owners so that express concerns and seek direct information | Checkout | Must Have 
+    [#18](https://github.com/andyk8872/p5-ecommerce/issues/18)  | As a customer | As a user I can contact the eccomerce owners so that express concerns and seek direct information | Checkout | Must Have
+* #### Epic 8 -  Wishlist (Milestone 2)
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
+    [#19](https://github.com/andyk8872/p5-ecommerce/issues/19)  | As a customer | As a user I can create a wishlist so that come back and view products that I might be interested in | Wishlist | Should Have
+* #### Epic 9-  Footer (Milestone 2)
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
+    [#20](https://github.com/andyk8872/p5-ecommerce/issues/20)  | As a customer | As a user I can link in to social media and other information relevant to the ecommerce site so that find information and contact the company | Footer | Must Have
+* #### Epic 10 -  Newsletter (Milestone 2)
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
+    [#21](https://github.com/andyk8872/p5-ecommerce/issues/21)  | As a customer | As a user I can receive a newsletter so that keep upto date on products and offers | Newsletter | Could Have
+
+
 
 * [Back to contents](#table-of-contents)  
 
@@ -154,9 +168,9 @@ A subscription model would not be viable initially. This could only be addressed
 ---
 
 #### Site User
-User 1: The typical site user would be a male/female aged between 18 and 70 who has an interest in tailoring, clothes designing and presenting a good outfit. 
+User 1: The typical site user would be a male/female who would most likely be a homeowner and wanting to upgrade a whole suite of furniture, kitchen or bathroom. 
 
-User 2: Additional site users could be partners of user 1 and may be browsing the site to purchase gifts for them.
+User 2: Additional site users might be lanlords/councils/nursing homes wanting to furnish whole houses.
 
 ---
 
@@ -166,8 +180,7 @@ The goals for the website are:
 - Provide users with products that meet their expectations
 - Allow users to view, read and comment on articles that may help or interest them.
 - Allow users to give their review on any product.
-- Allow users to add products to a wishlist of theirs.
-- To provide users with insights or tips on  machine maintenance and tips to choose the right fabrics for clothing.
+- Allow users to add products to a personal wistlist where they can store products that can easily return to.
 - Allow users to checkout quickly and easily
 - To allow users to create a profile to view past orders and update profile information
 
@@ -178,7 +191,7 @@ The businesses marketing strategy going forward is:
 
 1. Promote the store through it's facebook business page. This can be viewed in the SEO section.
 2. Utilise various social media platforms, and using Google ads and other paid services budget allowing.
-3. Have a soft online launch sale to encourage early adoption and purchases from prospective clients
+3. Have a soft online launch sale to encourage early adoption and purchases from prospective customers
 4. Utilizing services such as mailchimp, create a regular newsletter, blog site and create an extensive mailing list.
 5. Write meaningful and helpful articles / blog articles to help with SEO ranking in search engines like google.
 6. Set up multiple ads with a different product as the cover image, track the click through rate and stick with the high peformers.
@@ -300,6 +313,34 @@ Here is an example of a successful addition to a shopping bag.
 
 ![Messages](/docs/bag_success.png)
 
+
+</details>
+
+<details>
+<summary> Wishlist </summary>
+<br>
+
+This is a feature that allows the user to store products in an online holding area. This enables them to come back later to view where they have the choice to delete the item from the list or to further take a look at the product. This is a tried and proven technique to further sales. Also included is an added menu icon for the user.
+
+Here is an example of a user wishlist.
+
+![Messages](/docs/wishlist.png)
+
+This is the wishlist icon in the menu.
+
+![Messages](/docs/wishlist-user.png)
+
+</details>
+
+<details>
+<summary> Footer/Newsletter </summary>
+<br>
+
+This is a feature that allows the user to access the site owners social media accounts and view and converse via that portal. There is also the opportunity to signup to a newsletter where the user can receive regular information in relation to the products and deals that are upcomming.
+
+This is the footer which is on every site page where possible.
+
+![Messages](/docs/footer.png)
 
 </details>
 

@@ -91,9 +91,11 @@ body {
     text-underline-offset: 0.5em;
 }
 
+footer .footer-hover:hover,
 footer li>a:hover,
 footer i:hover {
     color: #d4af37 !important;
+    text-decoration: none;
 }
 
 /* background options */

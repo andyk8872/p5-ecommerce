@@ -33,7 +33,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 # DEBUG = True
 
-ALLOWED_HOSTS = ['ajk-furniture.herokuapp.com', '8000-andyk8872-p5ecommerce-3vcxvwenw6z.ws-eu99.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['ajk-furniture.herokuapp.com', '8000-andyk8872-p5ecommerce-3vcxvwenw6z.ws-eu100.gitpod.io', 'localhost']
 # ALLOWED_HOSTS = ['ajk-furniture.herokuapp.com', 'localhost']
 
 # EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"

@@ -345,8 +345,6 @@ This is the footer which is on every site page where possible.
 </details>
 
 
-### Profiles
-### Footer
 ### Newsletter
 ### Authentification
 ***
@@ -409,6 +407,7 @@ This is a list of libraries used in the project.
 * [Back to contents](#table-of-contents)
 ***
 ## Credits
+* The deployment section was taken from another project and customized appropriately. Its detail is will prove invaluable in the future for any user including myself the author of this project.
 * [Stackoverflow(answer from 'JCJS')](https://stackoverflow.com/questions/18676156) - How to use the 'choices' field option.
 * [Stackoverflow(answer from 'htgull')](https://stackoverflow.com/questions/5959462) -  'verbose names'-For using human names is models.
 * [Stackoverflow(answer from '')](https://stackoverflow.com/questions/44022056) - Sets a constraint/validatior for the number of participants.

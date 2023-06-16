@@ -4,7 +4,7 @@ html {
 
 body {
     background: url('/media/background.jpg') no-repeat center center fixed;
-    background-size: cover;    
+    background-size: cover;        
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
@@ -84,17 +84,15 @@ body {
 }
 
 /* mouse over link */
+.hover:hover,
 .nav-link:hover {
     color: #d4af37 !important;   
     text-decoration: underline;
     text-underline-offset: 0.5em;
 }
 
+footer li>a:hover,
 footer i:hover {
-    color: #d4af37 !important;
-}
-
-.hover:hover {
     color: #d4af37 !important;
 }
 

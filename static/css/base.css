@@ -21,7 +21,13 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    color: #d4af37;
 }
+
+.site-color {
+    background-color: #0e2954;
+} 
+
 
 .main-logo-link {
     width: fit-content;
@@ -79,17 +85,17 @@ body {
 
 /* mouse over link */
 .nav-link:hover {
-    color: #3A98B9 !important;   
+    color: #d4af37 !important;   
     text-decoration: underline;
     text-underline-offset: 0.5em;
 }
 
 footer i:hover {
-    color: #3a98b9 !important;
+    color: #d4af37 !important;
 }
 
 .hover:hover {
-    color: #3a98b9 !important;
+    color: #d4af37 !important;
 }
 
 /* background options */
@@ -135,7 +141,7 @@ footer i:hover {
 }
 
 .back-top:hover  {
-    background-color: #3A98B9 !important;
+    background-color:#d4af37!important;
 }
 
 /* product card */
@@ -348,13 +354,16 @@ footer i:hover {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 400px) {
     .logo-front {
         padding: 1px !important;
         font-size: 20px !important;
     }
     #mc_embed_signup {
         width: 250px;
+    }
+    .wishlist-gap {
+        margin: 20px;
     }
 
 }

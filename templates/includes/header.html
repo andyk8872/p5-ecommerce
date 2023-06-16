@@ -1,10 +1,11 @@
 {% load static %}
 
-<header class="container-fluid fixed-top">
-    <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+<header class="container-fluid fixed-top site-color">
+    <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
             <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                <h2 class="logo-font text-black my-0"><strong>AJK FURNITURE</strong></h2>
+                <h2 class="logo-font my-0"><strong>AJK FURNITURE</strong></h2>        
+                
             </a>
         </div>
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -25,7 +26,7 @@
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
             <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                 <li class="list-inline-item dropdown">
-                    <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
+                    <a class="text-white nav-link" href="#" id="user-options" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         <div class="text-center">
                             <div><i class="fas fa-user fa-lg"></i></div>
@@ -53,19 +54,19 @@
                 {% if request.user.is_authenticated %}
                 <li class="list-inline-item"> <div class="text-center">
                     <div><i class="fa-solid fa-heart text-danger"></i></div>
-                    <a class="text-black hover" href="{% url 'wishlist:wishlist' %}">Wishlist</a>
+                    <a class="text-white hover" href="{% url 'wishlist:wishlist' %}">Wishlist</a>
                 </div></li>
                 {% endif %}
 
 
                 <li class="list-inline-item">
-                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                    <a class="{% if grand_total %}text-white font-weight-bold{% else %}text-black{% endif %} nav-link"
                         href="{% url 'view_bag' %}">
                         <div class="text-center">                      
-                                <i class="fas fa-shopping-cart fa-lg"></i>
+                                <i class="fas fa-shopping-cart fa-lg text-white hover"></i>
                                 <span id="item-count" class="badge badge-danger">{{ product_count }}</span>
                             </div>
-                            <p class="my-0">
+                            <p class="my-0 text-white hover">
                                 {% if grand_total %}
                                 £{{ grand_total|floatformat:2 }}
                                 {% else %}
@@ -79,8 +80,8 @@
         </div>
     </div>
     <!-- the mobile nav and products nav links -->
-    <div class="row bg-white">
-        <nav class="navbar navbar-expand-lg navbar-light w-100">
+    <div class="row site-color">
+        <nav class="navbar navbar-expand-lg navbar-dark w-100">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                 aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -90,8 +91,8 @@
         </nav>
     </div>
     <div id="delivery-banner" class="row text-center">
-        <div class="col bg-secondary text-white">
-            <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
+        <div class="col bg-footer">
+            <h4 class="text-dark my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
         </div>
     </div>
 </header>

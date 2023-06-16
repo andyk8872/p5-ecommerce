@@ -17,14 +17,14 @@
 <h1 class="display-4 mt-5 text-center text-light">Review</h1>
 <div class="container">
     <div class="row">
-        <div class="col-md-6 mt-3 mb-3 offset-md-3">
+        <div class="col-md-8 mt-3 mb-3 offset-md-2">
             {% if not reviews %}
             <h2 class="text-center text-white">There are no reviews</h2>
             {% else %}
             {% for review in reviews %}
             <div class="card bg-light mb-3 mx-auto" style="max-width: 36rem">
                 <div class="card-body">
-                    <h5 class="font-weight-bold text-center bg-warning">{{ review.product }}</h5>
+                    <h5 class="font-weight-bold text-center text-white bg-secondary">{{ review.product }}</h5>
                     <h5 class="card-text">Review: {{ review.review }}</h5>
                     <p class="text-capitalize"><small>Review by: {{ review.user }} -
                             {{ review.created_on | date:"D d M Y"}} </small></p>

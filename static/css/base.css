@@ -121,9 +121,9 @@ footer i:hover {
 @keyframes change {
     0%{background-color: #30747e;}
     25%{background-color: #5e3c58;}
-    50%{background-color: #3498bd;}
-    75%{background-color: #e74c3c;}
-    100%{background-color: #9b59b6;}
+    50%{background-color: #0c134f;}
+    75%{background-color: #7e1717;}
+    100%{background-color: #99627a;}
 }
 
 .btt-button {

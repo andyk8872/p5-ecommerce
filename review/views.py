@@ -4,8 +4,10 @@ from .forms import ReviewForm
 from .models import Review
 from django.contrib.auth.models import User
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 
+@login_required
 def make_review(request):
     """
     Enables logged on user to create a review.
@@ -49,6 +51,7 @@ def delete_items(request, review_id):
     return render(request, 'review/delete_items.html')
 
 
+@login_required
 def edit_review(request, review_id):
     """
     The review creater can edit the review.

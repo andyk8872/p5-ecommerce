@@ -14,15 +14,16 @@
 * [Features](#features)
   * [Home Page](#home-page)
   * [Navigation](#navigation)
-  * [Footer](#footer)
-  * [Login/Logout/Register](#login-logout-register)  
-  * [Make Booking](#make-booking)
-  * [Delete Booking](#delete-booking)
-  * [Edit Booking](#edit-booking)
-  * [View Booking](#view-booking)
+  * [Products](#products)
+  * [Reviews](#reviews)
   * [Contact](#contact)
-  * [Make Review](#make-review)
-  * [View Review](#view-review)
+  * [Shoping Bag](#shoping-bag)
+  * [Checkout](#checkout)
+  * [Messages](#messages)
+  * [Wishlist](#wishlist)
+  * [Footer](#footer)
+
+  * [Login/Logout/Register](#login-logout-register)  
   * [Administration](#administration)
 * [Technologies Used](#technologies-used)
 * [Libraries](#libraries)
@@ -199,7 +200,7 @@ The businesses marketing strategy going forward is:
 
 * [Back to contents](#table-of-contents)
 
-## Features
+# Features
 
 <details>
 <summary> Home Page </summary>
@@ -209,6 +210,7 @@ The Home Page is a portal to the site with site navigation links, footer and the
 ![HomePage](/docs/homepage.png)
 
 </details>
+
 
 <details>
 <summary> Navigation </summary>
@@ -226,6 +228,7 @@ The mobile view.
 
 </details>
 
+
 <details>
 <summary> Products </summary>
 <br>
@@ -239,6 +242,7 @@ The product can be clicked on and more information on individual products and th
 ![Products](docs/detail_products.png)
 
 </details>
+
 
 <details>
 <summary> Reviews </summary>
@@ -264,6 +268,7 @@ This function allows the user to confirm a delete.
 
 </details>
 
+
 <details>
 <summary> Contact </summary>
 <br>
@@ -274,11 +279,12 @@ The contact option gives the user/customer the opportunity to contact the site o
 
 </details>
 
+
 <details>
 <summary> Shopping Bag </summary>
 <br>
 
-The shopping bag feature allows the user to view their choices and add/remove if they so desire. They can also view the individual/total costs. There is also the option to go to a secure checkout area of the site.
+The shopping bag feature allows the user to view their choices and add/remove if they so desire. They can also view the individual/total costs. There is also the option to go to a secure checkout area of the site. It is also in this feature that the discount amount formula is included. This added feature makes it that staff only have to add/change the category of a product for the discount to take effect rather than having to do so for each individual item/product. Also the discount amount can be universally set in settings.py..
 
 ![Shopping Bag](/docs/shopping_bag.png)
 
@@ -288,11 +294,12 @@ There is also a message popup that appears when the user makes a change to their
 
 </details>
 
+
 <details>
 <summary> Checkout </summary>
 <br>
 
-The checkout feature allow the user to view a list of their shopping bag including costs. There is a blank form if they are not a registered user. This form is to contain name and delivery details. 
+The checkout feature allow the user to view a list of their shopping bag including costs. There is a blank form if they are not a registered user. This form is to contain name and delivery details. Within the checkout model a formula was added to workout the delivery cost for each transaction. A fixed delivery charge which can be set in settings.py if the order is below a certain threshold. 
 
 ![Shopping Bag](/docs/checkout.png)
 
@@ -301,6 +308,7 @@ There is also a portion of the form for their credit card details.
 ![Shopping Bag](/docs/credit_details.png)
 
 </details>
+
 
 <details>
 <summary> Messages </summary>
@@ -315,6 +323,7 @@ Here is an example of a successful addition to a shopping bag.
 
 
 </details>
+
 
 <details>
 <summary> Wishlist </summary>
@@ -331,6 +340,7 @@ This is the wishlist icon in the menu.
 ![Messages](/docs/wishlist-user.png)
 
 </details>
+
 
 <details>
 <summary> Footer/Newsletter </summary>
@@ -404,6 +414,8 @@ This is a list of libraries used in the project.
 ## Bugs
 * There was an issue with migrations were running against local SQL development instead of production elephantSQL. A quick solution was to add 'release: python manage.py makemigrations && python manage.py migrate' at the top of the Procfile in order for auto migrate to heroku.
 * There was an initial problem with the 'review' app in that it would not render in the 'product detail' template. In order to get the app to work it was taken out of the product app and is now a standalone app. This would possibly want to be addressed at some stage.
+* A 500 server error was found to be an error in the wishlist app when a product with no image was added. The solution was a python if/else statement to insert an image if none was present.
+* The £ symbol was being sent in the confirmation email instead of the € symbol. A simple error but could have had negative results for the site in relationship with customers.
 * [Back to contents](#table-of-contents)
 ***
 ## Credits

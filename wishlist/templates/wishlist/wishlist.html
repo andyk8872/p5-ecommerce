@@ -12,57 +12,61 @@
 {% block content %}
 <div class="overlay"></div>
 
-    <div class="container">
-        <h1 class="text-center wishlist-gap">Wishlist</h1>
-        <div class="row">
+<div class="container">
+    <h1 class="text-center wishlist-gap">Wishlist</h1>
+    <div class="row">
 
-            <table class="align-wish table table-hover mt-3">
-                <thead>
-                    <tr>
-                        <th width="32%" scope="col">Product</th>
-                        <th width="33%" scope="col">Price</th>
-                        <th width="33%" scope="col">Options</th>
-                    </tr>
-                </thead>
-                {% if wishlist %}
-                <tbody>
-                    {% for item in wishlist %}
-                    <tr>
-                        <td width="33%">
-                            <div class="d-inline-block mr-4">
-                                <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="tiny">
-                            </div>
-                            <div class="d-inline-block">
-                                <a href="{% url 'product_detail' item.product.id %}">
-                                    {{ item.product.name | title }}
-                                </a>
-                            </div>
-                        </td>
-                        <td width="33%" class="price">€{{ item.product.price }}</td>
-                        
-                        <td width="33%">
+        <table class="align-wish table table-hover mt-3">
+            <thead>
+                <tr>
+                    <th width="32%" scope="col">Product</th>
+                    <th width="33%" scope="col">Price</th>
+                    <th width="33%" scope="col">Options</th>
+                </tr>
+            </thead>
+            {% if wishlist %}
+            <tbody>
+                {% for item in wishlist %}
+                <tr>
+                    <td width="33%">
+                        <div class="d-inline-block mr-4">                            
+                            {% if item.product.image %}
+                             <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="tiny">
+                            {% else %}
+                             <img src="https://ajk-furniture.s3.eu-west-1.amazonaws.com/media/noimage.png"
+                                alt="{{ item.product.name }}" class="tiny">                                
+                            {% endif %}
+                        </div>
+                        <div class="d-inline-block">
+                            <a href="{% url 'product_detail' item.product.id %}">
+                                {{ item.product.name | title }}
+                            </a>
+                        </div>
+                    </td>
+                    <td width="33%" class="price">€{{ item.product.price }}</td>
 
-                            <form action="{% url 'wishlist:delete_item'  %}" method="post">
-                                {% csrf_token %}
-                                <input type="hidden" name="item-id" value="{{ item.id }}">
-                                <button type="submit" class="trash"><i
-                                        class="fa-solid fa-trash trash-icon"></i></button>
-                            </form>
+                    <td width="33%">
+
+                        <form action="{% url 'wishlist:delete_item'  %}" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="item-id" value="{{ item.id }}">
+                            <button type="submit" class="trash"><i class="fa-solid fa-trash trash-icon"></i></button>
+                        </form>
 
 
-                        </td>
+                    </td>
 
-                    </tr>
-                    {% endfor %}
+                </tr>
+                {% endfor %}
 
-                </tbody>
-                {% else %}
-                <p>Your wish list is empty</p>
-                {% endif %}
+            </tbody>
+            {% else %}
+            <p>Your wish list is empty</p>
+            {% endif %}
 
-            </table>
+        </table>
 
-        </div>
     </div>
+</div>
 
 {% endblock %}

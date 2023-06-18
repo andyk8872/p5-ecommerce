@@ -56,8 +56,8 @@
 
             <div class="row">
                 {% for product in products %}
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">                    
-                    <div class="card h-100 border-0 grow shadow">                  
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card h-100 border-0 grow shadow">
 
                         {% if product.image %}
                         <a href="{% url 'product_detail' product.id %}">
@@ -94,10 +94,47 @@
                                     </p>
                                     {% endif %}
                                     {% if request.user.is_superuser %}
-                                    <small class="ml-3">
+                                    <!-- <small class="ml-3">
                                         <a href="{% url 'edit_product' product.id %}">Edit</a> |
                                         <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                    </small> -->
+                                    <small class="ml-3">
+                                        <a class="btn btn-primary btn-sm"
+                                            href="{% url 'edit_product' product.id %}">Edit</a> |
+                                        <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                            data-target="#exampleModal-{{ product.id}}">delete</button>
                                     </small>
+                                    <!-- Modal for confirmation of delete -->
+                                    <div class="modal fade" id="exampleModal-{{ product.id}}" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModals"><i
+                                                            class="fa-solid fa-trash"></i>&nbsp;&nbsp; Delete
+                                                        Confirmation</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-center">
+                                                    <span class="text-danger"><i
+                                                            class="fa-solid fa-trash fa-2x"></i></span>
+                                                    <div class="text-danger" style="height: 30px;">Are you sure you want
+                                                        to delete ?</div>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary btn-sm"
+                                                        data-dismiss="modal">Cancel</button>
+                                                    <a class="btn btn-outline-danger btn-sm"
+                                                        href="{% url 'delete_product' product.id %}">Delete</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     {% endif %}
                                 </div>
                             </div>

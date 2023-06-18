@@ -5,6 +5,7 @@ from .models import Review
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 
 
 @login_required
@@ -34,22 +35,18 @@ def show_review(request):
     """
     Displays the reviews.
     """
-    reviews = Review.objects.all().order_by('-created_on')
+    reviews = Review.objects.all()
+    # Set up pagination
+    p = Paginator(Review.objects.all(), 3)
+    page = request.GET.get('page')
+    reviewed = p.get_page(page)
+
     context = {
         'reviews': reviews,
+        'reviewed': reviewed,
     }
     return render(request, 'review/show_review.html', context)
 
-
-# @login_required
-# def delete_items(request, review_id):
-#     """ Delete a product from the store """
-#     review = get_object_or_404(Review, pk=review_id)
-#     if request.method == 'POST':
-#         review.delete()
-#         messages.success(request, 'Review deleted!')
-#         return redirect('show_review')
-#     return render(request, 'review/delete_items.html')
 
 @login_required
 def delete_items(request, review_id):

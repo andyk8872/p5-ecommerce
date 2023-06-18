@@ -17,44 +17,35 @@
 <div class="container">
     <h1 class="mt-5 text-center font-weight-bold text-white">Customer Product Reviews</h1>
     <hr>
-    <div class="row">
-
-        <!--Blog Entries-->
-        {% if not reviews %}
+    <div class="row">        
+        {% if not reviewed %}
         <h2 class="text-center text-white">There are no reviews</h2>
         {% else %}
-        {% for review in reviews %}
+        {% for review in reviewed %}
         <div class="col-xs-12 col-md-4">
             <div class="card grow shadow mb-2">
-
                 <img class="card-img-top" src=" {{ review.product.image.url }}" alt="{{ review.product.name }}"
                     style="height: 300px;">
                 <div class="card-body">
-
                     <h5 class="card-title">{{ review.product.name }}</h5>
                     <hr>
                     <p class="card-text">Review: {{ review.review |truncatechars:30}}</p>
                     <p class="text-capitalize"><small>Review by: {{ review.user }} -
-                            {{ review.created_on | date:"D d M Y"}} </small></p>
-                    <!-- ----------------------------------------------  -->
+                            {{ review.created_on | date:"D d M Y"}} </small></p>                    
                     {% if request.user == review.user %}
                     <a type="button" class="btn btn-outline-primary btn-sm"
-                        href="{% url 'edit_review' review.id %}">Edit</a>
-                    <!-- <a type="button" class="btn btn-outline-danger" href="{% url 'delete_items' review.id %}">Delete</a> -->
+                        href="{% url 'edit_review' review.id %}">Edit</a>                    
                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
                         data-target="#exampleModal-{{ review.id}}">delete</button>
-                    {% elif request.user.is_superuser %}
-                    <!-- <a type="button" class="btn btn-outline-danger" href="{% url 'delete_items' review.id %}">Delete</a> -->
+                    {% elif request.user.is_superuser %}                   
                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
                         data-target="#exampleModal-{{ review.id}}">delete</button>
                     {% else %}
                     <p></p>
-                    {% endif %}
-                    <!-- ---------------------------------------------------- -->
+                    {% endif %}                   
                 </div>
             </div>
-        </div>
-        <!-- ------------------------------------------ -->
+        </div>        
         <!-- Modal for confirmation of delete -->
         <div class="modal fade" id="exampleModal-{{ review.id}}" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
@@ -72,19 +63,33 @@
                         <span class="text-danger"><i class="fa-solid fa-trash fa-2x"></i></span>
                         <div class="text-danger" style="height: 30px;">Are you sure you want
                             to delete ?</div>
-
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
                         <a class="btn btn-outline-danger btn-sm" href="{% url 'delete_items' review.id %}">Delete</a>
-
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- -------------------------------------------- -->
+        </div>       
         {% endfor %}
         {% endif %}
     </div>
 </div>
+<br /></br />
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        {% if reviewed.has_previous %}
+        <li class="page-item"><a class="page-link" href="?page=1">&laquo First</a></li>
+        <li class="page-item"><a class="page-link" href="?page={{ reviewed.previous_page_number }}">Previous</a>
+        </li>
+        {%endif%}
+        <li class="page-item disabled"><a href="#" class="page-link">Page {{ reviewed.number }} of
+                {{ reviewed.paginator.num_pages }}</a></li>
+        {% if reviewed.has_next %}
+        <li class="page-item"><a class="page-link" href="?page={{ reviewed.next_page_number }}">Next</a></li>
+        <li class="page-item"><a class="page-link" href="?page={{ reviewed.paginator.num_pages }}">Last &raquo</a>
+        </li>
+        {%endif%}
+    </ul>
+</nav>
 {%endblock%}

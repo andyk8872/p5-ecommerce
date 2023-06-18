@@ -425,6 +425,7 @@ This is a list of libraries used in the project.
 * [Stackoverflow(answer from '')](https://stackoverflow.com/questions/44022056) - Sets a constraint/validatior for the number of participants.
 * [Contact forms/django('Youtube with Stein')](https://www.youtube.com/watch?v=dnhEnF7_RyM) - Creating backend contact form in django.
 * [Collectstatic Error('answer from 'Mo Far')](https://stackoverflow.com/questions/36665889) - Removing the 'collectstatic --noinput' error on deployment.
+* [Confirm delete error](https://stackoverflow.com/questions/70346755/django-deleting-using-modal-show-and-delete-only-the-first-item-from-the-tabl)
 ***
 ### Code and Tutorials
 * Code Institute walkthrough project "Boutique Ado" was used as the template with customizations in areas such the models and templates as outlined in the corresponding features section. 

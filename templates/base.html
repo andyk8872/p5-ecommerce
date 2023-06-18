@@ -45,7 +45,15 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <!-- Stripe -->
-    <script src="https://js.stripe.com/v3/"></script>    
+    <script src="https://js.stripe.com/v3/"></script>
+    <!-- mailchimp -->
+    <script id="mcjs">
+        ! function (c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(
+                m, p)
+        }(document, "script",
+            "https://chimpstatic.com/mcjs-connected/js/users/045424c0051a32d652a85c06b/bfab77724a13d90fd9a309b95.js");
+    </script>
     {% endblock %}
 
     {% block extra_js %}

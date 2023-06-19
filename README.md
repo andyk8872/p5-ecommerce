@@ -101,11 +101,12 @@ The live website can be found [here](https://ajk-furniture.herokuapp.com/).
     [#13](https://github.com/andyk8872/p5-ecommerce/issues/13)  | As a customer | As a user I can view the shopping cart so that **I can see what I am looking to purchase ** | Profiles | Must Have
     [#14](https://github.com/andyk8872/p5-ecommerce/issues/14)  | As a customer | As a user I can enter my credit card details and delivery details so that arrange payment and delivery of purchases | Checkout | Must Have
     [#15](https://github.com/andyk8872/p5-ecommerce/issues/15)  | As a customer | As a user I can receive confirmation of my order so that I know my purchase has been processed and payment received | Checkout | Must Have
-* #### Epic 6 -  Checkout (Milestone 2)
+* #### Epic 6 -  Reviewa (Milestone 2)
     |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
     | --------------- | -------------- | --------- | --------| -------------|
-    [#16](https://github.com/andyk8872/p5-ecommerce/issues/16)  | As a customer | As a user I can see what previous customers thought of products so that I can make an informed choice | Checkout | Must Have
-    [#17](https://github.com/andyk8872/p5-ecommerce/issues/17)  | As a customer | As a member/admin I can make, edit, and delete my own reviews so that share my current opinions | Must Have  
+    [#16](https://github.com/andyk8872/p5-ecommerce/issues/16)  | As a customer | As a user I can see what previous customers thought of products so that I can make an informed choice | Reviews | Could Have
+    [#22](https://github.com/andyk8872/p5-ecommerce/issues/22)  | As a customer | As a user I can go from page to page so that I can more easily view the reviews| Reviews | Must Have
+    [#17](https://github.com/andyk8872/p5-ecommerce/issues/17)  | As a customer | As a member/admin I can make, edit, and delete my own reviews so that share my current opinions | Must Have
 * #### Epic 7 -  Contact (Milestone 2)
     |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
     | --------------- | -------------- | --------- | --------| -------------|
@@ -122,8 +123,14 @@ The live website can be found [here](https://ajk-furniture.herokuapp.com/).
     |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
     | --------------- | -------------- | --------- | --------| -------------|
     [#21](https://github.com/andyk8872/p5-ecommerce/issues/21)  | As a customer | As a user I can receive a newsletter so that keep upto date on products and offers | Newsletter | Could Have
-
-
+* #### Epic 11 -  Confirmation Delete (Milestone 2)
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
+    [#24](https://github.com/andyk8872/p5-ecommerce/issues/24)  | As a customer | As a user I can have a cofirmation delete optionso that I can have peace of mind when using the site if I make a mistake | All | Could Have
+* #### Epic 112 -  Privacy Policy (Milestone 2)
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
+    [#24](https://github.com/andyk8872/p5-ecommerce/issues/23)  | As a customer | As a user I can view the legal privacy policy so that I know my legal rights in relation to information privacy laws | All | Could Have
 
 * [Back to contents](#table-of-contents)  
 

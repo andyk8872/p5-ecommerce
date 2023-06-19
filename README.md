@@ -8,8 +8,6 @@
   * [Colour Scheme](#color-scheme)
   * [Typography](#typography)
   * [Database Schema](#database-schema)
-* [Structure](#structure)
-  * [Logic](#logic)
 * [Business Model](#business-model)
 * [Features](#features)
   * [Home Page](#home-page)
@@ -22,15 +20,13 @@
   * [Messages](#messages)
   * [Wishlist](#wishlist)
   * [Footer](#footer)
-
   * [Login/Logout/Register](#login-logout-register)  
   * [Administration](#administration)
 * [Technologies Used](#technologies-used)
 * [Libraries](#libraries)
 * [Security and Authentification](#security-and-authentification)
 * [Testing](#testing)
-  * [Manual Testing](#manual-testing)
-    
+  * [Manual Testing](#manual-testing)    
 * [Bugs](#bugs)
 * [Credits](#credits)
 * [Deployment](#deployment)
@@ -143,8 +139,9 @@ The live website can be found [here](https://ajk-furniture.herokuapp.com/).
 ***
 ### Typography:
 ***
-## Structure
-### Logic/ERD (diagrams)
+## Database Schema
+* The diagram below shows the relationship between products, catogories, product reviews, users, wishlist. There is only one model with no relationships the contact model.
+![Database ERD](/docs/database.png)
 ***
 # Business Model
 
@@ -257,9 +254,13 @@ The product can be clicked on and more information on individual products and th
 
 The review feature allow new potential customers to view the opinions of previous customers on individual products. It also allows logged in customers to make reviews on individual products as well as edit and delete their own reviews. Staff can also delete reviews but they cannot edit other reviews. Also when a review is deleted there is a requirement to confirm the delete choice.
 
-This function allows the user to view a review.
+This function allows the user to view a review and to also paginate through the review pages.
 
 ![Show Reviews](/docs/view_review.png)
+
+This function allows the user to delete and edit a review that they created it also alows staff to delete any review but not to edit.
+
+![Show Reviews](/docs/edit_delete_review.png)
 
 This function allows the user to make a review.
 
@@ -310,7 +311,7 @@ The checkout feature allow the user to view a list of their shopping bag includi
 
 ![Shopping Bag](/docs/checkout.png)
 
-There is also a portion of the form for their credit card details.
+There is also a portion of the form for the customers credit card details.
 
 ![Shopping Bag](/docs/credit_details.png)
 
@@ -362,7 +363,7 @@ This is the footer which is on every site page where possible.
 </details>
 
 
-### Newsletter
+### Newsletter/Mailchimp
 ### Authentification
 ***
 
@@ -418,6 +419,16 @@ This is a list of libraries used in the project.
 
 * [Back to contents](#table-of-contents)
 ***
+## Security and Authentification
+
+Specific steps have been taken to ensure the security of users data and the websites integrity. These are as follows;
+* The use of an env.py file to store key variables for accessing secure environments i.e. PostgreSQL Database.
+* A gitignore file has been incorporated to ensure the env.py file is never committed to production. Therefore retaining the security of these key variables.
+* Additionally, these variables are stored within the Config Variables in Heroku to ensure GitPod and Heroku can synchronise securely.
+* Cross Site Request Forgery (CSRF) tokens have been applied to all HTML Forms. Their application provides protection from malicious attacks where users maybe performing certain actions or sending data when logged-in.
+* Django's inbuilt User Authentication has been applied to several key areas to ensure only authenticated users can add reviews. A further layer of security has been applied to ensure the ability to manage products (Create, Update, Delete) in the front end can only be performed by users with 'Admin' status.
+***
+
 ## Bugs
 * There was an issue with migrations were running against local SQL development instead of production elephantSQL. A quick solution was to add 'release: python manage.py makemigrations && python manage.py migrate' at the top of the Procfile in order for auto migrate to heroku.
 * There was an initial problem with the 'review' app in that it would not render in the 'product detail' template. In order to get the app to work it was taken out of the product app and is now a standalone app. This would possibly want to be addressed at some stage.

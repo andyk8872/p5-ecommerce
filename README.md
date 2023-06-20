@@ -134,10 +134,50 @@ The live website can be found [here](https://ajk-furniture.herokuapp.com/).
 
 ## Design
 ### Wireframes:
+<details><summary>Desktop-Wireframes</summary><br/>
+* This is the 'home page' design in the desktop.<br/>
+<img src="docs/homepage_desktop.png"><br/>
+* This is the 'products' design in the desktop.<br/>
+<img src="docs/products_desktop.png"><br/>
+* This is the 'reviews page' design in the desktop.<br/>
+<img src="docs/reviews_desktop.png"><br/>
+* This is the 'make review' design in the desktop.<br/>
+<img src="docs/make_review_desktop.png"><br/>
+*This is the 'profile' design in the desktop.<br/>
+<img src="docs/profile_desktop.png"><br/>
+* This is the 'contact' design in the desktop.<br/>
+<img src="docs/contact_desktop.png"><br/>
+* This is the 'wishlist' design in the desktop.<br/>
+<img src="docs/wishlist_desktop.png"><br/>
+*This is the 'shopping bag' design in the desktop.<br/>
+<img src="docs/shopping_bag_desktop.png"><br/>
+* This is the 'checkout' design in the desktop.<br/>
+<img src="docs/checkout_desktop.png"><br/>
+
+</details>
+
+<details><summary>Mobile-Wireframes</summary><br/>
+* This is the 'home page' design in the mobile.<br/>
+<img src="docs/home_mobile.png"><br/>
+* This is the 'products' design in the mobile.<br/>
+<img src="docs/products_mobile.png"><br/>
+* This is the 'reviews' design in the mobile.<br/>
+<img src="docs/reviews_mobile.png"><br/>
+
+</details>
+
+* [Back to contents](#table-of-contents) 
+
+
+
+
 ***
 ### Color Scheme:
+The colors were chosen to complement each other whilst contrasting as well as provide accessiblity.<br>
+ ![Color Palete](/docs/color.png)
 ***
 ### Typography:
+* The Lato font and the font-family-sans-serif were used throughout the app.
 ***
 ## Database Schema
 * The diagram below shows the relationship between products, catogories, product reviews, users, wishlist. There is only one model with no relationships the contact model.

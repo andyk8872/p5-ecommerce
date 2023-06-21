@@ -9,6 +9,7 @@
   * [Typography](#typography)
   * [Database Schema](#database-schema)
 * [Business Model](#business-model)
+  * [Facebook Page](#facebook-page)
 * [Features](#features)
   * [Home Page](#home-page)
   * [Navigation](#navigation)
@@ -123,10 +124,25 @@ The live website can be found [here](https://ajk-furniture.herokuapp.com/).
     |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
     | --------------- | -------------- | --------- | --------| -------------|
     [#24](https://github.com/andyk8872/p5-ecommerce/issues/24)  | As a customer | As a user I can have a cofirmation delete optionso that I can have peace of mind when using the site if I make a mistake | All | Could Have
-* #### Epic 112 -  Privacy Policy (Milestone 2)
+* #### Epic 12 -  Privacy Policy (Milestone 2)
     |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
     | --------------- | -------------- | --------- | --------| -------------|
     [#24](https://github.com/andyk8872/p5-ecommerce/issues/23)  | As a customer | As a user I can view the legal privacy policy so that I know my legal rights in relation to information privacy laws | All | Could Have
+* #### Epic 13 - Account Management  (Milestone 3)
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
+    [#27](https://github.com/andyk8872/p5-ecommerce/issues/27)  | Administratior | As a admin I can manage products so that I can add/delete or update then where neccessary | All | Must Have
+    [#28](https://github.com/andyk8872/p5-ecommerce/issues/28)  | Adiministrator | As a admin I can manage the users accounts so that I can make any changes if neccessary | All | Must Have
+    [#29](https://github.com/andyk8872/p5-ecommerce/issues/29)  | Administrator | As a admin I can view the messages reveived via the contact app so that I can reply to customers queries | All | Must Have
+    [#30](https://github.com/andyk8872/p5-ecommerce/issues/30)  | Administrator | As a admin I can delete reviews so that I can make sure all reviews are appropriate | All | Must Have
+* #### Epic 14 - Facebook  (Milestone 3)
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
+    [#25](https://github.com/andyk8872/p5-ecommerce/issues/25)  | Administratior | As a user I can follow AJK Furniture on social media so that I can see what new suites and deals are on offer. | All | Must Have
+  * #### Epic 14 - Authentification  (Milestone 3)
+    |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
+    | --------------- | -------------- | --------- | --------| -------------|
+    [#26](https://github.com/andyk8872/p5-ecommerce/issues/26)  | Administratior | As a user I can register an account so that I can store my personal details and preferences. | All | Must Have
 
 * [Back to contents](#table-of-contents)  
 
@@ -240,7 +256,27 @@ The businesses marketing strategy going forward is:
 4. Utilizing services such as mailchimp, create a regular newsletter, blog site and create an extensive mailing list.
 5. Write meaningful and helpful articles / blog articles to help with SEO ranking in search engines like google.
 6. Set up multiple ads with a different product as the cover image, track the click through rate and stick with the high peformers.
-7. Depending on budget the business may look at promoting it's custom made products to influencers in the brands niche, offering complimentary goods or a small fee for a shout out  or review. Ideally targetting low to medium influencers with a following of at least 10k in target niche. This would be realistic with a low budget for the business starting off and can start pushing traffic towards the site. 
+7. Depending on budget the business may look at promoting it's custom made products to influencers in the brands niche, offering complimentary goods or a small fee for a shout out  or review. Ideally targetting low to medium influencers with a following of at least 10k in target niche. This would be realistic with a low budget for the business starting off and can start pushing traffic towards the site.
+***
+
+### Facebook Page
+* A facebook social media page is of vital importance and is recognized as one of the primary marketing tools.
+* The facebook page link (The page might be ofline due to facebook policy of not publishing pages not active, therefore there are screenshots below.)
+
+The facebook page can be found [here](https://www.facebook.com/profile.php?id=100093531144565)
+
+<details>
+<summary> Facebook Screenshots </summary>
+<br>
+Screenshot Top
+
+![Facebook](/docs/facebook_top.png)
+
+Screenshot Bottom
+
+![Facebook](/docs/facebook_bottom.png)
+
+</details>
 
 * [Back to contents](#table-of-contents)
 

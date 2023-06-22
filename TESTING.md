@@ -28,4 +28,10 @@
 
 * [Back to contents](#table-of-contents)
 
+## Login/Logout/Register
+
+* The site is using 'allauth' for the administration of users and accounts.
+
+
+
 

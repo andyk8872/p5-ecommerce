@@ -26,8 +26,7 @@
 * [Technologies Used](#technologies-used)
 * [Libraries](#libraries)
 * [Security and Authentification](#security-and-authentification)
-* [Testing](#testing)
-  * [Manual Testing](#manual-testing)    
+* [Testing](#testing)    
 * [Bugs](#bugs)
 * [Credits](#credits)
 * [Deployment](#deployment)
@@ -503,6 +502,21 @@ Specific steps have been taken to ensure the security of users data and the webs
 * Additionally, these variables are stored within the Config Variables in Heroku to ensure GitPod and Heroku can synchronise securely.
 * Cross Site Request Forgery (CSRF) tokens have been applied to all HTML Forms. Their application provides protection from malicious attacks where users maybe performing certain actions or sending data when logged-in.
 * Django's inbuilt User Authentication has been applied to several key areas to ensure only authenticated users can add reviews. A further layer of security has been applied to ensure the ability to manage products (Create, Update, Delete) in the front end can only be performed by users with 'Admin' status.
+***
+
+## Testing
+
+I have chosen include a series of manual tests with the possibility of unit tests if time allows.
+
+* Each user story is to be tested to ensure requirements are met.
+* Browser - Pages are to be tested accross various browsers.
+* Accessibility - To be checked accross various devices.
+* Code Validation - Various validation tools to check HTML, CSS, Python and Javascript.
+
+For testing results: [Navigate to TESTING.md](TESTING.md)
+
+
+* [Back to contents](#table-of-contents)#
 ***
 
 ## Bugs

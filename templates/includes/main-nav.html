@@ -18,11 +18,11 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="clothing-link"
+            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="rooms-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Rooms
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+            <div class="dropdown-menu border-0" aria-labelledby="rooms-link">
                 <a href="{% url 'products' %}?category=bedroom_suite" class="dropdown-item">Bedroom Suites</a>
                 <a href="{% url 'products' %}?category=kitchen_suite" class="dropdown-item">Kitchen Suites</a>
                 <a href="{% url 'products' %}?category=sofa" class="dropdown-item">Sofas</a>
@@ -31,11 +31,11 @@
             </div>
         </li>     
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="clothing-link"
+            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="reviews-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Reviews
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+            <div class="dropdown-menu border-0" aria-labelledby="reviews-link">
                 {% if user.is_authenticated %}
                 <a href="{% url 'show_review' %}" class="dropdown-item">View Product Reviews</a>
                 <a href="{% url 'make_review' %}" class="dropdown-item">Make Product Review</a>

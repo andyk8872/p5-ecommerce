@@ -87,6 +87,11 @@ body {
     width: max-content;
 }
 
+/* free deliver text */
+.delivery {
+    font-size: 24px;
+}
+
 /* mouse over link */
 .hover:hover,
 .nav-link:hover {

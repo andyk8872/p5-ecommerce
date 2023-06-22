@@ -97,7 +97,7 @@ The live website can be found [here](https://ajk-furniture.herokuapp.com/).
     [#13](https://github.com/andyk8872/p5-ecommerce/issues/13)  | As a customer | As a user I can view the shopping cart so that **I can see what I am looking to purchase ** | Profiles | Must Have
     [#14](https://github.com/andyk8872/p5-ecommerce/issues/14)  | As a customer | As a user I can enter my credit card details and delivery details so that arrange payment and delivery of purchases | Checkout | Must Have
     [#15](https://github.com/andyk8872/p5-ecommerce/issues/15)  | As a customer | As a user I can receive confirmation of my order so that I know my purchase has been processed and payment received | Checkout | Must Have
-* #### Epic 6 -  Reviewa (Milestone 2)
+* #### Epic 6 -  Reviews (Milestone 2)
     |  User Story ID  |    User Type   |  Content  |   App   | MoSCoW Label |
     | --------------- | -------------- | --------- | --------| -------------|
     [#16](https://github.com/andyk8872/p5-ecommerce/issues/16)  | As a customer | As a user I can see what previous customers thought of products so that I can make an informed choice | Reviews | Could Have

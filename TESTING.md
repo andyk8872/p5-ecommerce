@@ -61,8 +61,16 @@
 * Users can view/search products and add to wishlist or shopping bag.<br>
 ![Products](docs/products_test.png)<br>
 
+## Cart
 
+* The feature is user story: [#9](https://github.com/andyk8872/p5-ecommerce/issues/9) , [#10](https://github.com/andyk8872/p5-ecommerce/issues/10) & [#11](https://github.com/andyk8872/p5-ecommerce/issues/11)
 
+* User can view their shopping cart, update and go to checkout.<br>
+![Cart](docs/cart_test.png)<br>
 
+## Secure Checkout
 
+* The feature is user story: [#12](https://github.com/andyk8872/p5-ecommerce/issues/12) , [#13](https://github.com/andyk8872/p5-ecommerce/issues/13) , [#14](https://github.com/andyk8872/p5-ecommerce/issues/14) , [#15](https://github.com/andyk8872/p5-ecommerce/issues/15)
 
+* User can view their chosen products, fill in their details in order to pay for their items.<br>
+![Cart](docs/checkout_test.png)<br>

@@ -4,7 +4,7 @@
 
 ## [Table of Contents](#table-of-contents)
 * [HTML](#html)
-* [CSS](#css)
+* [CSS Validator](#css-validator)
 * [Lighthouse](#lighthouse)
 * [Javascript](#javascript)
 * [Python](#python)

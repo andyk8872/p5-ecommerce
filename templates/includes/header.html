@@ -25,7 +25,7 @@
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
             <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                 <li class="list-inline-item dropdown">
-                    <a class="text-white nav-link" href="#" id="user-options" data-toggle="dropdown"
+                    <a class="text-white nav-link" href="#" id="user-choices" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         <div class="text-center">
                             <div><i class="fas fa-user fa-lg"></i></div>
@@ -36,7 +36,7 @@
                             {% endif %}
                         </div>
                     </a>
-                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                    <div class="dropdown-menu border-0" aria-labelledby="user-choices">
                         {% if request.user.is_authenticated %}
                         {% if request.user.is_superuser %}
                         <a href="{% url 'add_product' %}" class="dropdown-item">Product Management.</a>
@@ -60,7 +60,7 @@
 
                 <li class="list-inline-item">
                     <a class="{% if grand_total %}text-white font-weight-bold{% else %}text-black{% endif %} nav-link"
-                        href="{% url 'view_bag' %}">
+                        href="{% url 'view_bag' %}" aria-label="View shopping bag">
                         <div class="text-center">                      
                                 <i class="fas fa-shopping-cart fa-lg text-white hover"></i>
                                 <span id="item-count" class="badge badge-danger">{{ product_count }}</span>

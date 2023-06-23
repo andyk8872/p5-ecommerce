@@ -9,6 +9,16 @@
 * [Javascript](#javascript)
 * [Python](#python)
 
+### CSS Validator
+The CSS validator showed no errors. The css styles in the style sheets should be grouped together for developers editing or updating the code.<br>
+![Mobile lighthouse](docs/css-validator.png)<br>
+
+### Lighthouse
+The desktop results are encouraging especially in relation to accessibility (The remaining accessibility issue is related to 'li' in bootstrap navbar.)<br>
+![Desktop lighthouse](docs/lighthouse-test.png)<br>
+The  mobile results for are also encoraging expect that there are issues with preformance in that rendering for utilities such as mailchimp and stripe is delaying loading times. This will need to be addressed in the long term. The background image was converted to a 'webp', but this made no difference to the results, although the error was removed from the results.<br>
+![Mobile lighthouse](docs/mobile-lighthouse-test.png)<br>
+
 ### Javascript
 * Much of the javascript is included in the individual files for seperate files JSHint was used.<br>
 * This was the results from JSHint.<br>

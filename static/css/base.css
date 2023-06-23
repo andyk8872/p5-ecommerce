@@ -24,6 +24,10 @@ body {
     color: #d4af37;
 }
 
+.app-header {
+    text-transform: uppercase;
+}
+
 .site-color {
     background-color: #0e2954;
 } 
@@ -158,12 +162,6 @@ footer i:hover {
 .shadow {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
-/* .grow {
-    transition: all .2s ease-in-out;
-}
-.grow:hover {
-    transform: scale(1.1)!important;
-} */
 
 /* ------------------------------- bootstrap toasts */
 
@@ -353,10 +351,6 @@ footer i:hover {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-    /* .header-container {
-        padding-top: 116px;
-    } */
-
     body {
         height: calc(100vh - 116px);
     }

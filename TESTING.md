@@ -54,6 +54,13 @@
 * Users can add products to a wishlist for futher use.<br>
 ![Wushlist](docs/wishlist_test.png)<br>
 
+## Products
+
+* This feature is user story: [#3](https://github.com/andyk8872/p5-ecommerce/issues/3) ,  [#4](https://github.com/andyk8872/p5-ecommerce/issues/4) & [#8](https://github.com/andyk8872/p5-ecommerce/issues/8)
+
+* Users can view/search products and add to wishlist or shopping bag.<br>
+![Products](docs/products_test.png)<br>
+
 
 
 

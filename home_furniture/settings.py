@@ -13,9 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 import dj_database_url
-# if os.path.isfile('env.py'):
-#     import env
-from pathlib import Path
+if os.path.isfile('env.py'):
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -30,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['ajk-furniture.herokuapp.com', '8000-andyk8872-p5ecommerce-3vcxvwenw6z.ws-eu100.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['ajk-furniture.herokuapp.com', '8000-andyk8872-p5ecommerce-3vcxvwenw6z.ws-eu100.gitpod.io', 'localhost']  # noqa
 
 # Application definition
 

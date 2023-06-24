@@ -524,13 +524,17 @@ For testing results: [Navigate to TESTING.md](TESTING.md)
 * There was an initial problem with the 'review' app in that it would not render in the 'product detail' template. In order to get the app to work it was taken out of the product app and is now a standalone app. This would possibly want to be addressed at some stage.
 * A 500 server error was found to be an error in the wishlist app when a product with no image was added. The solution was a python if/else statement to insert an image if none was present.
 * The £ symbol was being sent in the confirmation email instead of the € symbol. A simple error but could have had negative results for the site in relationship with customers.
+### Outstanding bugs:
+* When the messages appear after user interaction the shopping bag is included in the message. This occurs in a number of apps a wiil need to addressed.
+* In the profile app, the order summary does not include the discount amount in the total. This will need to be addressed for the user.
+* There is a warning message when using pagination in the review app in that it is unordered. This been tested and it does not affect results but does need addressing. It might be that a class view is more appropriate/suitable.
+
+
 * [Back to contents](#table-of-contents)
 ***
 ## Credits
-* The deployment section was taken from another project and customized appropriately. Its detail is will prove invaluable in the future for any user including myself the author of this project.
-* [Stackoverflow(answer from 'JCJS')](https://stackoverflow.com/questions/18676156) - How to use the 'choices' field option.
-* [Stackoverflow(answer from 'htgull')](https://stackoverflow.com/questions/5959462) -  'verbose names'-For using human names is models.
-* [Stackoverflow(answer from '')](https://stackoverflow.com/questions/44022056) - Sets a constraint/validatior for the number of participants.
+* [Deployment(from 'sahid129')](https://github.com/shahid129/oliver-dein/blob/main/DEPLOYMENT.md) - The deployment section was taken from another project and customized appropriately. Its detail is will prove invaluable in the future for any user including myself the author of this project.
+* [Pagination Youtube(Codemy.com)](hhttps://www.youtube.com/watch?v=wY_BNsxCEi4) - How to pagination with bootstrap.
 * [Contact forms/django('Youtube with Stein')](https://www.youtube.com/watch?v=dnhEnF7_RyM) - Creating backend contact form in django.
 * [Collectstatic Error('answer from 'Mo Far')](https://stackoverflow.com/questions/36665889) - Removing the 'collectstatic --noinput' error on deployment.
 * [Confirm delete error](https://stackoverflow.com/questions/70346755/django-deleting-using-modal-show-and-delete-only-the-first-item-from-the-tabl)

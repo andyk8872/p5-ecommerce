@@ -53,6 +53,11 @@ The target audience are customers that they feel would benefit with the ease fro
 
 The live website can be found [here](https://ajk-furniture.herokuapp.com/).
 
+## AJK Furniture Responsive Website View
+<hr>
+
+![Responsive Website](/docs/responsive.png)
+
 *** 
 ## User Experience Design
 

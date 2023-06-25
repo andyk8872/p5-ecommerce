@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /account/
+Disallow: /bag/
+Sitemap: https://ajk-furniture.herokuapp.com/sitemap.xml

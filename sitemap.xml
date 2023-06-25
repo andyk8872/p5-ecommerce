@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/bag/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/?category=bedroom_suite</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/?category=kitchen_suite</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/?category=sofa</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/?category=small_dining_table</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/?category=clearance</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/review/show_review/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/contact/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/20/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/17/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/18/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/15/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/19/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/1/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/10/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/14/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/11/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/2/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/16/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/4/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/12/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/13/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/3/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/8/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/32/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/6/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/9/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/5/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/products/7/</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/login/?next=/review/delete_items/14</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/login/?next=/review/delete_items/13</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/login/?next=/review/delete_items/11</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/review/show_review/?page=2</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/review/show_review/?page=3</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/signup/?next=%2Freview%2Fdelete_items%2F14</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/signup/?next=%2Freview%2Fdelete_items%2F13</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/signup/?next=%2Freview%2Fdelete_items%2F11</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/login/?next=/review/delete_items/15</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/login/?next=/review/delete_items/16</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/login/?next=/review/delete_items/17</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/review/show_review/?page=1</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/login/?next=/review/delete_items/18</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/login/?next=%2Freview%2Fdelete_items%2F14</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/login/?next=%2Freview%2Fdelete_items%2F13</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/login/?next=%2Freview%2Fdelete_items%2F11</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/signup/?next=%2Freview%2Fdelete_items%2F15</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/signup/?next=%2Freview%2Fdelete_items%2F16</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/signup/?next=%2Freview%2Fdelete_items%2F17</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/signup/?next=%2Freview%2Fdelete_items%2F18</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/login/?next=%2Freview%2Fdelete_items%2F15</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/login/?next=%2Freview%2Fdelete_items%2F16</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/login/?next=%2Freview%2Fdelete_items%2F17</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://ajk-furniture.herokuapp.com/accounts/login/?next=%2Freview%2Fdelete_items%2F18</loc>
+  <lastmod>2023-06-25T05:45:56+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
+
+</urlset>

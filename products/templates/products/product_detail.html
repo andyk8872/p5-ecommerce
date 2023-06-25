@@ -45,15 +45,11 @@
                     </a>
                 </p>
                 {% endif %}
-                {% if request.user.is_superuser %}
-                <!-- <small class="ml-3">
-                    <a href="{% url 'edit_product' product.id %}">Edit</a> |
-                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                </small> -->
+                {% if request.user.is_superuser %}             
                 <small class="ml-3">
                     <a class="btn btn-primary btn-sm" href="{% url 'edit_product' product.id %}">Edit</a> |
                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                        data-target="#exampleModal-{{ product.id}}">delete</button>
+                        data-target="#exampleModal-{{ product.id}}">Delete</button>
                 </small>
                 <!-- Modal for confirmation of delete -->
                 <div class="modal fade" id="exampleModal-{{ product.id}}" tabindex="-1"

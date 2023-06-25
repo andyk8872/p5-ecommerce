@@ -29,6 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+
 ALLOWED_HOSTS = ['ajk-furniture.herokuapp.com', '8000-andyk8872-p5ecommerce-3vcxvwenw6z.ws-eu100.gitpod.io', 'localhost']  # noqa
 
 # Application definition

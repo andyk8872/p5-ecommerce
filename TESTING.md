@@ -9,6 +9,10 @@
 * [Javascript](#javascript)
 * [Python](#python)
 
+### HTML Validator
+The HTML validator showed no errors after the testing was preformed on individual segements. The li elements are being permitted as child elements of the nav.<br>
+![HTML ](docs/html_test.png)<br>
+
 ### CSS Validator
 The CSS validator showed no errors. The css styles in the style sheets should be grouped together for developers editing or updating the code.<br>
 ![Mobile lighthouse](docs/css-validator.png)<br>
